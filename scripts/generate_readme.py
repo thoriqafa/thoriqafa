@@ -14,7 +14,7 @@ client = OpenAI(
     api_key=os.environ["API_KEY_AI"],
     base_url=os.environ.get("AI_BASE_URL", "https://router.thour.my.id/v1"),
 )
-model = os.environ.get("AI_MODEL", "gemini-2.5-flash")
+model = os.environ.get("AI_MODEL", "myminebos")
 
 
 # =========================
