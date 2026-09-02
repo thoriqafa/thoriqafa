@@ -30,7 +30,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-genai
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Login GitHub CLI
         run: |
@@ -38,7 +39,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate README with Gemini
+      - name: Generate README with AI Router
         run: |
           python scripts/generate_readme.py
         env:
