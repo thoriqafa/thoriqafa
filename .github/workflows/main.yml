@@ -19,8 +19,6 @@ jobs:
       - name: Update README
         run: |
           echo "# Hello Thoriq 👋" > README.md
-          echo "" >> README.md
-          echo "README updated automatically." >> README.md
 
       - name: Commit and Push
         run: |
