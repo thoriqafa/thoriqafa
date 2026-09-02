@@ -1,6 +1,9 @@
 name: Update Profile README
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: "0 1 * * *"
