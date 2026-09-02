@@ -1,0 +1,48 @@
+profile:
+  name: "Thoriq Afa"
+  headline: "Backend Developer · AI Enthusiast"
+  bio: >
+    Backend developer yang berfokus pada pengembangan aplikasi,
+    automation, system integration, dan eksplorasi teknologi AI.
+  location: "Indonesia"
+  website: ""
+  social:
+    github: "https://github.com/thoriqafa"
+  focus:
+    - Backend Development
+    - API Development
+    - Database
+    - Automation
+    - Artificial Intelligence
+    - System Integration
+  principles:
+    - Clean and maintainable code
+    - Automation over repetitive work
+    - Practical AI implementation
+    - Reliable backend systems
+
+readme:
+  language: "English"
+  sections:
+    - hero
+    - about
+    - tech_stack
+    - featured_projects
+    - github_activity
+    - contribution_graph
+    - current_focus
+    - contact
+  max_featured_projects: 6
+  allow_ai_to:
+    - improve_wording
+    - summarize_projects
+    - organize_information
+    - generate_section_descriptions
+  forbid_ai_from:
+    - inventing_projects
+    - inventing_experience
+    - inventing_statistics
+    - inventing_companies
+    - inventing_certifications
+    - inventing_skills
+    - inventing_achievements

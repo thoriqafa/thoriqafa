@@ -1,179 +1,64 @@
 import os
-import json
-import subprocess
-from pathlib import Path
+import yaml
 
-from openai import OpenAI
+from google import genai
 
+from github_data import get_profile, get_repositories
+from prompts import SYSTEM_PROMPT, build_prompt
 
-# =========================
-# AI Router Client
-# =========================
+CONFIG_FILE = "config/profile.yml"
+README_FILE = "README.md"
 
-client = OpenAI(
-    api_key=os.environ["API_KEY_AI"],
-    base_url=os.environ.get("AI_BASE_URL", "https://router.thour.my.id/v1"),
-)
-model = os.environ.get("AI_MODEL", "myminebos")
+def load_config():
+    with open(CONFIG_FILE, "r", encoding="utf-8") as file:
+        return yaml.safe_load(file)
 
+def generate_ai_readme(config, github_profile, repositories):
+    api_key = os.environ.get("API_KEY_AI")
+    if not api_key:
+        raise RuntimeError("API_KEY_AI belum tersedia.")
 
-# =========================
-# GitHub Username
-# =========================
+    client = genai.Client(api_key=api_key)
+    prompt = build_prompt(config, github_profile, repositories)
 
-username = "thoriqafa"
-template_path = Path("README_TEMPLATE.md")
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=[SYSTEM_PROMPT, prompt],
+    )
 
+    if not response.text:
+        raise RuntimeError("AI tidak menghasilkan README.")
 
-# =========================
-# Ambil daftar repository
-# =========================
+    return response.text.strip()
 
-result = subprocess.run(
-    [
-        "gh",
-        "repo",
-        "list",
-        username,
-        "--limit",
-        "100",
-        "--json",
-        "name,description,url,stargazerCount,forkCount,primaryLanguage,pushedAt,isArchived"
-    ],
-    capture_output=True,
-    text=True,
-    check=True
-)
+def clean_markdown(content):
+    for prefix in ("```markdown", "```md", "```"):
+        if content.startswith(prefix):
+            content = content[len(prefix):]
+            break
+    if content.endswith("```"):
+        content = content[:-3]
+    return content.strip()
 
-repositories = json.loads(result.stdout)
+def main():
+    print("Loading profile configuration...")
+    config = load_config()
 
+    print("Fetching GitHub profile...")
+    github_profile = get_profile()
 
-# =========================
-# Buang repository archived
-# =========================
+    print("Fetching repositories...")
+    repositories = get_repositories()
+    print(f"Found {len(repositories)} repositories.")
 
-repositories = [
-    repo
-    for repo in repositories
-    if not repo["isArchived"]
-]
+    print("Generating README with AI...")
+    readme = generate_ai_readme(config, github_profile, repositories)
+    readme = clean_markdown(readme)
 
+    with open(README_FILE, "w", encoding="utf-8") as file:
+        file.write(readme + "\n")
 
-# =========================
-# Ambil template acuan
-# =========================
+    print("README successfully generated.")
 
-readme_template = template_path.read_text(encoding="utf-8")
-
-
-# =========================
-# Prompt AI
-# =========================
-
-prompt = f"""
-You are an AI portfolio curator for a GitHub profile.
-
-GitHub username:
-{username}
-
-Repository data:
-{json.dumps(repositories, indent=2)}
-
-Reference template:
-```markdown
-{readme_template}
-```
-
-Create a professional GitHub Profile README.
-
-Your job is to decide what is actually worth displaying.
-
-Consider:
-
-- Most active projects
-- Recently updated projects
-- Most interesting projects
-- Technologies used
-- Stars and forks
-- Project descriptions
-- Overall technical focus
-- Projects that best represent the developer
-
-Do NOT invent:
-
-- Projects
-- Technologies
-- Achievements
-- Statistics
-- Experience
-- Skills
-
-For repository/project sections, only use information that exists in the provided GitHub data.
-For personal profile text, badges, links, headings, and visual layout, preserve the owner-provided reference template unless it conflicts with the repository data.
-
-Create a polished Markdown README.
-
-Use the reference template as the main structure and style guide.
-You may rename, remove, or repeat sections when the repository data makes it necessary.
-Replace placeholders only when the needed information exists in the repository data or the reference template.
-Keep owner-provided static profile content from the template.
-
-Include only sections that provide value.
-
-Possible sections:
-
-- Introduction
-- Current focus
-- Featured projects
-- Tech stack
-- GitHub activity
-- What I'm building
-- Contact
-
-The README should feel like a professional developer portfolio,
-not a generic template.
-
-For featured projects, prioritize projects that are:
-1. Recently active
-2. Technically interesting
-3. Representative of the developer
-4. Have useful descriptions
-5. Have stars/forks when available
-
-Do not list every repository.
-
-Return ONLY the Markdown content.
-"""
-
-
-# =========================
-# Generate README dengan AI Router
-# =========================
-
-response = client.chat.completions.create(
-    model=model,
-    messages=[
-        {
-            "role": "user",
-            "content": prompt,
-        }
-    ],
-)
-
-
-# =========================
-# Ambil hasil AI
-# =========================
-
-readme = response.choices[0].message.content
-
-
-# =========================
-# Simpan README
-# =========================
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme)
-
-
-print("README generated successfully.")
+if __name__ == "__main__":
+    main()

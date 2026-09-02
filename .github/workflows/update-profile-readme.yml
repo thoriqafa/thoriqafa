@@ -1,16 +1,18 @@
 name: Update Profile README
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "README.md"
-
   workflow_dispatch:
 
   schedule:
     - cron: "0 1 * * *"
+
+  push:
+    branches:
+      - main
+    paths:
+      - "config/profile.yml"
+      - "scripts/**"
+      - ".github/workflows/update-profile-readme.yml"
 
 permissions:
   contents: write
@@ -22,31 +24,28 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Login GitHub CLI
-        run: |
-          gh auth status
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate README with AI Router
-        run: |
-          python scripts/generate_readme.py
+      - name: Generate README
         env:
           API_KEY_AI: ${{ secrets.API_KEY_AI }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_readme.py
 
-      - name: Commit and Push
+      - name: Commit README
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,9 +53,9 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "Tidak ada perubahan."
+            echo "README tidak berubah."
             exit 0
           fi
 
-          git commit -m "chore: update AI profile README"
+          git commit -m "chore: update profile README"
           git push
