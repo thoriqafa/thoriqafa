@@ -1,7 +1,7 @@
 import os
 import yaml
 
-from google import genai
+from openai import OpenAI
 
 from github_data import get_profile, get_repositories
 from prompts import SYSTEM_PROMPT, build_prompt
@@ -18,18 +18,25 @@ def generate_ai_readme(config, github_profile, repositories):
     if not api_key:
         raise RuntimeError("API_KEY_AI belum tersedia.")
 
-    client = genai.Client(api_key=api_key)
+    base_url = os.environ.get("AI_BASE_URL", "https://router.thour.my.id/v1")
+    model = os.environ.get("AI_MODEL", "myminebos")
+
+    client = OpenAI(api_key=api_key, base_url=base_url)
     prompt = build_prompt(config, github_profile, repositories)
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=[SYSTEM_PROMPT, prompt],
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
     )
 
-    if not response.text:
+    content = response.choices[0].message.content
+    if not content:
         raise RuntimeError("AI tidak menghasilkan README.")
 
-    return response.text.strip()
+    return content.strip()
 
 def clean_markdown(content):
     for prefix in ("```markdown", "```md", "```"):
