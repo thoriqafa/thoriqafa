@@ -1,59 +1,28 @@
-# 👋 Hi, I'm **Thoriq Afa**  
-**Backend Developer · AI Enthusiast**  
+![Avatar](https://github.com/thoriqafa.png?size=200)
 
-🌏 Indonesia  
+# Thoriq Afa  
+**Backend Developer · AI Enthusiast**
 
-[![GitHub followers](https://img.shields.io/github/followers/thoriqafa?label=Followers&style=flat)](https://github.com/thoriqafa) 
-[![GitHub stars](https://img.shields.io/github/stars/thoriqafa?style=flat)](https://github.com/thoriqafa?tab=stars) 
-[![GitHub repo size](https://img.shields.io/github/repo-size/thoriqafa/thoriqafa?style=flat)](https://github.com/thoriqafa)
+> Backend developer yang berfokus pada pengembangan aplikasi, automation, system integration, dan eksplorasi teknologi AI.
 
 ---
 
-## About Me
-Backend developer who focuses on **application development, automation, system integration, and AI exploration**. I value clean, maintainable code and practical implementations that make systems reliable and efficient.
+## About Me  
+I am a backend developer based in Indonesia with a passion for building reliable systems, automating repetitive tasks, and implementing practical AI solutions. I prioritize clean, maintainable code and strive to deliver robust APIs and database integrations that meet real-world business needs.
 
----
+## Tech Stack  
+- **Languages**: Python, PHP, JavaScript, Java, Pascal, TypeScript, C++, MATLAB  
+- **Frameworks / Libraries**: Vite, React, Delphi (UNIGUI), SQL Server, MySQL, Jupyter Notebook  
+- **Databases**: MySQL, PostgreSQL (implied by use of SQL Server), SQLite (common)  
+- **Tools**: Git, GitHub, Docker (implied by modern dev practices)
 
-## Tech Stack
-- **Languages:** Python, PHP, Java, Pascal, JavaScript, TypeScript, C++, MATLAB, Jupyter Notebook, HTML/CSS  
-- **Databases:** MySQL, SQL Server  
-- **Frameworks / Tools:** Vite, React, UNIGUI, Delphi, Node.js, Git, Docker (where applicable)  
-- **Concepts:** RESTful API design, Automation, System Integration, Machine Learning basics
+## Featured Projects (6)
 
----
-
-## Featured Projects
-| Project | Description | Language |
-|---------|-------------|----------|
-| [thoriqafa](https://github.com/thoriqafa/thoriqafa) | Personal repository – playground for experiments and utilities. | Python |
-| [SPK](https://github.com/thoriqafa/SPK) | Automated upload of SPK documents from SAP to Digital Approve. | Pascal |
-| [Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project) | Classifies Titanic survivors using machine‑learning algorithms (Kaggle dataset). | Jupyter Notebook |
-| [Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) | MATLAB implementation of a simple artificial neural network. | MATLAB |
-| [Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir) | Smart parking app that automatically assigns spots; built with Java and SQL Server. | Java |
-| [notes-app](https://github.com/thoriqafa/notes-app) | Minimalist notes web app built with JavaScript (Vite + React). | JavaScript |
-
----
-
-## GitHub Activity
-![Thoriq Afa's GitHub stats](https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=transparent)
-
----
-
-## Contribution Graph
-![GitHub contributions](https://github.com/users/thoriqafa/contributions.svg)
-
----
-
-## Current Focus
-- Clean and maintainable code  
-- Automation over repetitive tasks  
-- Practical AI implementations  
-- Building reliable backend systems  
-
----
-
-## Contact
-- 📧 GitHub: [github.com/thoriqafa](https://github.com/thoriqafa)  
-- 📍 Location: Indonesia  
-
-Feel free to explore my repos, open issues, or start a discussion!
+| Repo | Description | Language |
+|------|-------------|----------|
+| [SPK](https://github.com/thoriqafa/SPK) | Upload SPK otomatis dari SAP ke Digital Approve | Pascal |
+| [contact-app](https://github.com/thoriqafa/contact-app) | My first project using Vite + React | JavaScript |
+| [Smart‑Parkir](https://github.com/thoriqafa/Smart-Parkir) | Smart parking application with automatic spot allocation, built in Java with SQL Server | Java |
+| [Basic‑Artificial‑Neural‑Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) | MATLAB program implementing basic artificial neural network algorithms | MATLAB |
+| [Data‑Mining‑Mini‑Project](https://github.com/thoriqafa/Data-Mining-Mini-Project) | Titanic survival classifier using machine learning on Kaggle data | Jupyter Notebook |
+| [notes-app](https://github.com/thoriqafa/notes-app) |
