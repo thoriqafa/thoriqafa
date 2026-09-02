@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "README.md"
+
   workflow_dispatch:
+
   schedule:
     - cron: "0 1 * * *"
 
@@ -21,7 +25,9 @@ jobs:
 
       - name: Update README
         run: |
-          echo "# Hello Thoriq Afa 👋" > README.md
+          echo "# Hello Thoriq 👋" > README.md
+          echo "" >> README.md
+          echo "README updated automatically." >> README.md
 
       - name: Commit and Push
         run: |
