@@ -1,17 +1,20 @@
 import os
 import json
 import subprocess
+from pathlib import Path
 
-from google import genai
+from openai import OpenAI
 
 
 # =========================
-# Gemini Client
+# AI Router Client
 # =========================
 
-client = genai.Client(
-    api_key=os.environ["API_KEY_AI"]
+client = OpenAI(
+    api_key=os.environ["API_KEY_AI"],
+    base_url=os.environ.get("AI_BASE_URL", "https://router.thour.my.id/v1"),
 )
+model = os.environ.get("AI_MODEL", "gemini-2.5-flash")
 
 
 # =========================
@@ -19,6 +22,7 @@ client = genai.Client(
 # =========================
 
 username = "thoriqafa"
+template_path = Path("README_TEMPLATE.md")
 
 
 # =========================
@@ -56,6 +60,13 @@ repositories = [
 
 
 # =========================
+# Ambil template acuan
+# =========================
+
+readme_template = template_path.read_text(encoding="utf-8")
+
+
+# =========================
 # Prompt AI
 # =========================
 
@@ -67,6 +78,11 @@ GitHub username:
 
 Repository data:
 {json.dumps(repositories, indent=2)}
+
+Reference template:
+```markdown
+{readme_template}
+```
 
 Create a professional GitHub Profile README.
 
@@ -92,9 +108,15 @@ Do NOT invent:
 - Experience
 - Skills
 
-Only use information that exists in the provided GitHub data.
+For repository/project sections, only use information that exists in the provided GitHub data.
+For personal profile text, badges, links, headings, and visual layout, preserve the owner-provided reference template unless it conflicts with the repository data.
 
 Create a polished Markdown README.
+
+Use the reference template as the main structure and style guide.
+You may rename, remove, or repeat sections when the repository data makes it necessary.
+Replace placeholders only when the needed information exists in the repository data or the reference template.
+Keep owner-provided static profile content from the template.
 
 Include only sections that provide value.
 
@@ -125,12 +147,17 @@ Return ONLY the Markdown content.
 
 
 # =========================
-# Generate README dengan Gemini
+# Generate README dengan AI Router
 # =========================
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=prompt
+response = client.chat.completions.create(
+    model=model,
+    messages=[
+        {
+            "role": "user",
+            "content": prompt,
+        }
+    ],
 )
 
 
@@ -138,7 +165,7 @@ response = client.models.generate_content(
 # Ambil hasil AI
 # =========================
 
-readme = response.text
+readme = response.choices[0].message.content
 
 
 # =========================
