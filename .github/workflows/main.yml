@@ -1,4 +1,4 @@
-name: Update Profile README
+name: AI Update Profile README
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
 
   workflow_dispatch:
 
-  schedule:
-    - cron: "0 1 * * *"
+  # schedule:
+  #   - cron: "0 1 * * *"
 
 permissions:
   contents: write
@@ -23,11 +23,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update README
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
         run: |
-          echo "# Hello Thoriq Afa👋" > README.md
-          echo "" >> README.md
-          echo "README updated automatically." >> README.md
+          pip install openai
+
+      - name: Login GitHub CLI
+        run: |
+          gh auth status
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate README with AI
+        run: |
+          python scripts/generate_readme.py
+        env:
+          API_KEY_AI: ${{ secrets.API_KEY_AI }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and Push
         run: |
@@ -41,5 +57,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: update profile README"
+          git commit -m "chore: update AI profile README"
           git push
