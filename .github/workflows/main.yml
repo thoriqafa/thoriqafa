@@ -1,4 +1,4 @@
-name: AI Update Profile README
+name: Update Profile README
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
 
   workflow_dispatch:
 
-  # schedule:
-  #   - cron: "0 1 * * *"
+  schedule:
+    - cron: "0 1 * * *"
 
 permissions:
   contents: write
@@ -30,7 +30,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai
+          pip install google-genai
 
       - name: Login GitHub CLI
         run: |
@@ -38,7 +38,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate README with AI
+      - name: Generate README with Gemini
         run: |
           python scripts/generate_readme.py
         env:
