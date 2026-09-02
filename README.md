@@ -1,179 +1,59 @@
-```markdown
-<div align="center">
+# 👋 Hi, I'm **Thoriq Afa**  
+**Backend Developer · AI Enthusiast**  
 
-# 👋 Hi, I'm Thoriq Afa
+🌏 Indonesia  
 
-### Backend Developer · AI Enthusiast
-
-<p>
-  <a href="https://github.com/thoriqafa">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://linkedin.com/in/thoriqafa">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
-
-<img src="https://komarev.com/ghpvc/?username=thoriqafa&label=Profile%20Views&color=0e75b6&style=flat" />
-
-</div>
+[![GitHub followers](https://img.shields.io/github/followers/thoriqafa?label=Followers&style=flat)](https://github.com/thoriqafa) 
+[![GitHub stars](https://img.shields.io/github/stars/thoriqafa?style=flat)](https://github.com/thoriqafa?tab=stars) 
+[![GitHub repo size](https://img.shields.io/github/repo-size/thoriqafa/thoriqafa?style=flat)](https://github.com/thoriqafa)
 
 ---
 
-## 🧑‍💻 About Me
-
-I'm a developer focused on building **backend systems, automation, AI integrations, and reliable infrastructure** for real‑world applications.
-
-I enjoy turning complex business processes into systems that are:
-
-- ⚡ **Fast** – optimized for performance  
-- 🧩 **Maintainable** – clean and modular architecture  
-- 🔐 **Secure** – designed with security in mind  
-- 🤖 **Automated** – reducing repetitive manual work  
-
-> **I don't just build applications. I build systems that solve problems.**
+## About Me
+Backend developer who focuses on **application development, automation, system integration, and AI exploration**. I value clean, maintainable code and practical implementations that make systems reliable and efficient.
 
 ---
 
-## 🛠️ Tech Stack
-
-### Backend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=python,php,java,delphi,cpp" />
-</p>
-
-### Frontend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,ts" />
-</p>
-
-### Database & Storage
-
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,postgres" />
-</p>
+## Tech Stack
+- **Languages:** Python, PHP, Java, Pascal, JavaScript, TypeScript, C++, MATLAB, Jupyter Notebook, HTML/CSS  
+- **Databases:** MySQL, SQL Server  
+- **Frameworks / Tools:** Vite, React, UNIGUI, Delphi, Node.js, Git, Docker (where applicable)  
+- **Concepts:** RESTful API design, Automation, System Integration, Machine Learning basics
 
 ---
 
-## 📌 Featured Projects
-
-### [contact-app](https://github.com/thoriqafa/contact-app)
-
-My firs project using vite+react
-
-- **Tech:** JavaScript (React) & Vite  
-- **Why it matters:** Demonstrates modern frontend tooling and component‑based UI development.
-
----
-
-### [SPK](https://github.com/thoriqafa/SPK)
-
-upload SPK otomatis dari SAP ke Digital Approve
-
-- **Tech:** Pascal (Delphi)  
-- **Why it matters:** Automates the transfer of SPK documents from SAP to a digital approval workflow, reducing manual effort.
+## Featured Projects
+| Project | Description | Language |
+|---------|-------------|----------|
+| [thoriqafa](https://github.com/thoriqafa/thoriqafa) | Personal repository – playground for experiments and utilities. | Python |
+| [SPK](https://github.com/thoriqafa/SPK) | Automated upload of SPK documents from SAP to Digital Approve. | Pascal |
+| [Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project) | Classifies Titanic survivors using machine‑learning algorithms (Kaggle dataset). | Jupyter Notebook |
+| [Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) | MATLAB implementation of a simple artificial neural network. | MATLAB |
+| [Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir) | Smart parking app that automatically assigns spots; built with Java and SQL Server. | Java |
+| [notes-app](https://github.com/thoriqafa/notes-app) | Minimalist notes web app built with JavaScript (Vite + React). | JavaScript |
 
 ---
 
-### [thoriqafa](https://github.com/thoriqafa/thoriqafa)
-
-My Personal
-
-- **Tech:** Python (personal scripts & utilities)  
-- **Why it matters:** Central repository for personal experiments, utility scripts, and learning resources.
+## GitHub Activity
+![Thoriq Afa's GitHub stats](https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=transparent)
 
 ---
 
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thoriqafa&layout=compact&theme=transparent&hide_border=true" />
-
-<br><br>
-
-<img src="https://streak-stats.demolab.com?user=thoriqafa&theme=transparent&hide_border=true" />
-
-<br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=thoriqafa&theme=github-compact&hide_border=true" />
-
-</div>
+## Contribution Graph
+![GitHub contributions](https://github.com/users/thoriqafa/contributions.svg)
 
 ---
 
-## 🟩 Contribution Graph
-
-<div align="center">
-
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=thoriqafa&bg_color=00000000&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true"
-    width="95%"
-  />
-
-</div>
+## Current Focus
+- Clean and maintainable code  
+- Automation over repetitive tasks  
+- Practical AI implementations  
+- Building reliable backend systems  
 
 ---
 
-## 🔭 Currently Exploring
+## Contact
+- 📧 GitHub: [github.com/thoriqafa](https://github.com/thoriqafa)  
+- 📍 Location: Indonesia  
 
-```text
-┌─────────────────────────────────────────────────┐
-│  ⚙️ Backend Engineering                         │
-│  ├── Scalable APIs                              │
-│  ├── System Architecture                        │
-│  └── Performance Optimization                   │
-│                                                 │
-│  🧰 Developer Productivity                      │
-│  ├── Coding Agents                              │
-│  ├── Git Automation                             │
-│  └── Automated Workflows                        │
-│                                                 │
-└─────────────────────────────────────────────────┘
-```
-
----
-
-## 💬 Let's Connect
-
-<div align="center">
-
-I'm always interested in discussing:
-
-**Backend Architecture · Automation · AI · Developer Tools**
-
-<br>
-
-<a href="https://github.com/thoriqafa">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-<a href="https://linkedin.com/in/thoriqafa">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-
-<a href="mailto:your-email@example.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-<sub>Thanks for visiting my profile.</sub>
-
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer" />
-
-</div>
-```
+Feel free to explore my repos, open issues, or start a discussion!
