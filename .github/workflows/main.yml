@@ -25,7 +25,7 @@ jobs:
 
       - name: Update README
         run: |
-          echo "# Hello Thoriq 👋" > README.md
+          echo "# Hello Thoriq Afa👋" > README.md
           echo "" >> README.md
           echo "README updated automatically." >> README.md
 
