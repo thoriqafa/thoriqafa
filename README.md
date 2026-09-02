@@ -1,3 +1,3 @@
-# Hello Thoriq 👋
+# Hello Thoriq Afa👋
 
 README updated automatically.
