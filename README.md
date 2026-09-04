@@ -1,100 +1,50 @@
-# 🚀 Thoriq Afa
+Hi, I'm Thoriq Afa 👋
 
-**Backend Developer · AI Enthusiast**
-
-> Backend developer focusing on application development, automation, system integration, and AI technology exploration.
+Backend Developer · AI Enthusiast
 
 ---
 
-## 📌 About Me
+### About Me
 
-I am a backend developer based in Indonesia, specializing in building reliable backend systems and automating repetitive workflows. My work spans from web application development to integrating disparate systems. I am deeply interested in applying Artificial Intelligence to solve practical problems rather than just theoretical ones.
+I'm a backend developer based in Indonesia, focused on building robust applications, automating processes, and integrating systems. I also actively explore and implement AI technologies.
 
-**Core Principles:**
-*   Clean and maintainable code
-*   Automation over repetitive work
-*   Practical AI implementation
-*   Reliable backend systems
+My core principles revolve around writing clean and maintainable code, prioritizing automation over repetitive tasks, pursuing practical AI implementations, and ensuring the reliability of backend systems.
 
----
+### Tech Stack
 
-## 🛠 Tech Stack
+I work with a diverse set of technologies, including:
 
-Based on my current projects and workflow, I frequently work with:
+*   **Languages**: Python, PHP, JavaScript, TypeScript, Java, Pascal, C++, MATLAB, Jupyter Notebook
+*   **Web Technologies**: HTML
+*   **Databases**: MySQL, SQL Server
 
-*   **Backend:** Python, PHP, Java, Pascal (Delphi)
-*   **Frontend:** JavaScript, React, TypeScript, HTML
-*   **Databases:** MySQL, SQL Server
-*   **Data & AI:** MATLAB, Jupyter Notebooks, Machine Learning concepts
-*   **Concepts:** API Development, System Integration, Automation
+### Featured Projects
 
-*(Note: Technologies are listed based on active repository usage.)*
+*   **[notes-app](https://github.com/thoriqafa/notes-app)**
+    A JavaScript-based application for managing notes.
+*   **[contact-app](https://github.com/thoriqafa/contact-app)**
+    My first project utilizing Vite and React for a contact management application.
+*   **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)**
+    A data mining project focused on classifying passenger survival using machine learning algorithms and a dataset from Kaggle.
+*   **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)**
+    A MATLAB program implementing the fundamental algorithms of an Artificial Neural Network.
+*   **[SPK](https://github.com/thoriqafa/SPK)**
+    A solution for automating the upload of SPK (Surat Perintah Kerja) documents from SAP to a Digital Approve system.
+*   **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)**
+    A smart parking application developed with Java and SQL Server to automatically determine and assign parking spots.
 
----
+### GitHub Activity
 
-## 💻 Featured Projects
+[![Thoriq Afa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=dark&hide_border=true&count_private=true)](https://github.com/thoriqafa)
 
-A selection of recent and notable projects from my GitHub.
+### Contribution Graph
 
-1.  **[SPK](https://github.com/thoriqafa/SPK)**
-    *   *Language:* Pascal
-    *   *Description:* Automated upload system for SPK documents from SAP to Digital Approve, streamlining document approval workflows.
+![Thoriq Afa's GitHub Contribution Graph](https://github.com/thoriqafa.png)
 
-2.  **[spk-nodoc-log](https://github.com/thoriqafa/spk-nodoc-log)**
-    *   *Language:* PHP
-    *   *Description:* Logging and monitoring system for SPK documentation processes.
+### Current Focus
 
-3.  **[dev-note](https://github.com/thoriqafa/dev-note)**
-    *   *Language:* PHP
-    *   *Description:* Personal development notes and project snippets.
+My current focus areas include Backend Development, API Development, Database management, Automation, Artificial Intelligence, and System Integration.
 
-4.  **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)**
-    *   *Language:* TypeScript
-    *   *Description:* Starter template for Hydrogen projects.
+### Contact
 
-5.  **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)**
-    *   *Language:* Jupyter Notebook
-    *   *Description:* Machine learning project classifying survival probabilities using Kaggle dataset.
-
-6.  **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)**
-    *   *Language:* Java
-    *   *Description:* Smart parking application using SQL Server to automatically determine parking positions for users.
-
-*[View all public repositories](https://github.com/thoriqafa?tab=repositories)*
-
----
-
-## 📊 GitHub Activity
-
-*   **Public Repositories:** 19
-*   **Followers:** 7
-*   **Following:** 8
-
-*(Note: No specific contribution counts or percentages are displayed to ensure accuracy.)*
-
----
-
-## 📈 Contribution Graph
-
-```
-<!-- Custom profile summary.svg is not included; using standard GitHub contribution graph -->
-Check out my contribution activity directly on my profile page for the most up-to-date visualization.
-```
-
----
-
-## 🎯 Current Focus
-
-*   **Backend Development:** Building scalable and maintainable server-side applications.
-*   **System Integration:** Connecting legacy systems (like SAP/Delphi contexts) with modern web services.
-*   **Automation:** Creating scripts and tools to reduce manual data entry and process bottlenecks.
-*   **AI Exploration:** Experimenting with machine learning models for practical, real-world use cases.
-
----
-
-## 📧 Contact
-
-*   **GitHub:** [thoriqafa](https://github.com/thoriqafa)
-*   **Location:** Indonesia
-
-Feel free to connect via GitHub for collaborations or discussions on backend systems and AI automation.
+[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thoriqafa)
