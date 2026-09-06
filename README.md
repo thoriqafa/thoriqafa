@@ -1,50 +1,58 @@
-Hi, I'm Thoriq Afa 👋
+Hi, I'm **Thoriq Afa**! 👋
 
-Backend Developer · AI Enthusiast
+A Backend Developer and AI Enthusiast.
 
 ---
 
 ### About Me
 
-I'm a backend developer based in Indonesia, focused on building robust applications, automating processes, and integrating systems. I also actively explore and implement AI technologies.
+I am a backend developer focused on application development, automation, system integration, and exploring AI technologies. I am passionate about crafting reliable backend systems and implementing practical AI solutions.
 
-My core principles revolve around writing clean and maintainable code, prioritizing automation over repetitive tasks, pursuing practical AI implementations, and ensuring the reliability of backend systems.
+My core principles include:
+*   Writing clean and maintainable code
+*   Prioritizing automation over repetitive work
+*   Implementing practical AI solutions
+*   Building reliable backend systems
+
+I am based in Indonesia.
 
 ### Tech Stack
 
-I work with a diverse set of technologies, including:
+Here are some technologies I've been working with:
 
-*   **Languages**: Python, PHP, JavaScript, TypeScript, Java, Pascal, C++, MATLAB, Jupyter Notebook
-*   **Web Technologies**: HTML
-*   **Databases**: MySQL, SQL Server
+*   **Languages**: PHP, Python, JavaScript, Pascal, TypeScript, Java, Jupyter Notebook
+*   **Backend**: API Development
+*   **Database**: MySQL
+*   **Concepts**: Automation, System Integration, Artificial Intelligence
 
 ### Featured Projects
 
-*   **[notes-app](https://github.com/thoriqafa/notes-app)**
-    A JavaScript-based application for managing notes.
-*   **[contact-app](https://github.com/thoriqafa/contact-app)**
-    My first project utilizing Vite and React for a contact management application.
-*   **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)**
-    A data mining project focused on classifying passenger survival using machine learning algorithms and a dataset from Kaggle.
-*   **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)**
-    A MATLAB program implementing the fundamental algorithms of an Artificial Neural Network.
-*   **[SPK](https://github.com/thoriqafa/SPK)**
-    A solution for automating the upload of SPK (Surat Perintah Kerja) documents from SAP to a Digital Approve system.
-*   **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)**
-    A smart parking application developed with Java and SQL Server to automatically determine and assign parking spots.
+| Project | Description | Language(s) | Stars |
+| :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :---- |
+| [dev-note](https://github.com/thoriqafa/dev-note) | A repository for development notes. | PHP | 0 |
+| [SPK](https://github.com/thoriqafa/SPK) | Automating SAP SPK uploads to Digital Approve. | Pascal | 0 |
+| [hydrogen-template](https://github.com/thoriqafa/hydrogen-template) | A template repository. | TypeScript | 0 |
+| [notes-app](https://github.com/thoriqafa/notes-app) | A simple notes application. | JavaScript | 1 |
+| [contact-app](https://github.com/thoriqafa/contact-app) | My first project using Vite + React. | JavaScript | 1 |
+| [Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project) | Classifying passenger survival using machine learning and Kaggle dataset. | Jupyter Notebook | 0 |
 
 ### GitHub Activity
 
-[![Thoriq Afa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=dark&hide_border=true&count_private=true)](https://github.com/thoriqafa)
+[![Thoriq Afa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=default)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Contribution Graph
 
-![Thoriq Afa's GitHub Contribution Graph](https://github.com/thoriqafa.png)
+[![Thoriq Afa's Contribution Graph](https://github-readme-streak-stats.herokuapp.com/?user=thoriqafa&theme=default)](https://github.com/DenverCoder1/github-readme-streak-stats)
 
 ### Current Focus
 
-My current focus areas include Backend Development, API Development, Database management, Automation, Artificial Intelligence, and System Integration.
+*   Backend Development
+*   API Development
+*   Database Management
+*   Automation
+*   Artificial Intelligence
+*   System Integration
 
-### Contact
+### Let's Connect!
 
-[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thoriqafa)
+*   **GitHub**: [thoriqafa](https://github.com/thoriqafa)
