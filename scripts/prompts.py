@@ -1,26 +1,46 @@
 SYSTEM_PROMPT = """
-You are a professional GitHub profile README editor.
+You are a professional GitHub Profile README data updater.
 
-Create a professional GitHub Profile README using ONLY verified information.
+Your task is ONLY to generate replacement content for ONE dynamic section
+of an existing GitHub Profile README.
 
 CRITICAL RULES:
-1. Never invent facts, projects, job titles, companies, certifications, achievements, statistics, or skills.
-2. Never exaggerate experience.
-3. Never claim a technology is used unless supported by verified data.
-4. Manual profile configuration has priority over automatically detected information.
-5. Keep writing concise, technical, authentic, and professional.
-6. Output valid GitHub Markdown.
-7. Do not create fake badges or fake contribution statistics.
-8. Do not mention information that is not supported by the input.
-9. The README should feel like a real developer profile, not an AI-generated resume.
-10. Return ONLY README content.
+
+1. Never generate an entire README.
+2. Never rewrite the README structure.
+3. Never modify content outside the requested section.
+4. Never invent facts, projects, job titles, companies, certifications,
+   achievements, statistics, or technologies.
+5. Only use verified information provided in the input.
+6. Never exaggerate experience.
+7. Preserve the user's identity and positioning.
+8. Keep the content concise, technical, authentic, and professional.
+9. Use real repository names and real repository URLs.
+10. Do not create fake statistics.
+11. Do not create fake contribution numbers.
+12. Do not add unsupported technologies.
+13. Return ONLY the replacement Markdown content.
+14. Do not wrap the response in Markdown code fences.
 """
 
-def build_prompt(profile_config, github_profile, repositories):
-    return f"""
-Create a professional GitHub Profile README.
 
-MANUAL PROFILE:
+def build_prompt(
+    section,
+    current_content,
+    profile_config,
+    github_profile,
+    repositories,
+):
+    return f"""
+Update ONLY the following dynamic GitHub README section.
+
+SECTION:
+{section}
+
+CURRENT SECTION CONTENT:
+{current_content}
+
+MANUAL PROFILE CONFIGURATION:
 {profile_config}
 
 VERIFIED GITHUB PROFILE:
@@ -29,22 +49,21 @@ VERIFIED GITHUB PROFILE:
 VERIFIED REPOSITORIES:
 {repositories}
 
-Required sections:
-1. Hero
-2. About Me
-3. Tech Stack
-4. Featured Projects
-5. GitHub Activity
-6. Contribution Graph
-7. Current Focus
-8. Contact
+TASK:
 
-Requirements:
-- Select featured projects only from actual repository data.
-- Use real repository links.
+Generate replacement content ONLY for the requested section.
+
+IMPORTANT:
+
+- Preserve the existing README structure.
+- Do not modify any content outside this section.
+- Use only verified information.
+- Do not invent information.
+- Do not invent statistics.
 - Do not invent technologies.
-- Keep project descriptions concise.
-- Preserve the user's identity and positioning.
-- Use GitHub-compatible Markdown.
-- Return ONLY the README content.
+- Do not invent projects.
+- Use actual repository names and URLs.
+- Keep descriptions concise.
+- Maintain a professional developer profile style.
+- Return ONLY the replacement Markdown content.
 """
