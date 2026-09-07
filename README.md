@@ -1,58 +1,36 @@
-Hi, I'm **Thoriq Afa**! 👋
-
-A Backend Developer and AI Enthusiast.
+# Thoriq Afa
+**Backend Developer · AI Enthusiast**
 
 ---
 
 ### About Me
-
-I am a backend developer focused on application development, automation, system integration, and exploring AI technologies. I am passionate about crafting reliable backend systems and implementing practical AI solutions.
-
-My core principles include:
-*   Writing clean and maintainable code
-*   Prioritizing automation over repetitive work
-*   Implementing practical AI solutions
-*   Building reliable backend systems
-
-I am based in Indonesia.
+I am a Backend Developer based in Indonesia with a focus on application development, automation, system integration, and the exploration of AI technologies. I prioritize writing clean, maintainable code and believe in using automation to reduce repetitive tasks.
 
 ### Tech Stack
+My work involves a variety of technologies across backend development, database management, and data-driven projects:
 
-Here are some technologies I've been working with:
-
-*   **Languages**: PHP, Python, JavaScript, Pascal, TypeScript, Java, Jupyter Notebook
-*   **Backend**: API Development
-*   **Database**: MySQL
-*   **Concepts**: Automation, System Integration, Artificial Intelligence
+*   **Languages:** PHP, JavaScript, Python, Java, Pascal, C++, TypeScript
+*   **Web Development:** HTML, React, Vite
+*   **Database & Tools:** MySQL, SQL Server, MATLAB, Jupyter Notebook
 
 ### Featured Projects
-
-| Project | Description | Language(s) | Stars |
-| :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :---- |
-| [dev-note](https://github.com/thoriqafa/dev-note) | A repository for development notes. | PHP | 0 |
-| [SPK](https://github.com/thoriqafa/SPK) | Automating SAP SPK uploads to Digital Approve. | Pascal | 0 |
-| [hydrogen-template](https://github.com/thoriqafa/hydrogen-template) | A template repository. | TypeScript | 0 |
-| [notes-app](https://github.com/thoriqafa/notes-app) | A simple notes application. | JavaScript | 1 |
-| [contact-app](https://github.com/thoriqafa/contact-app) | My first project using Vite + React. | JavaScript | 1 |
-| [Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project) | Classifying passenger survival using machine learning and Kaggle dataset. | Jupyter Notebook | 0 |
-
-### GitHub Activity
-
-[![Thoriq Afa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thoriqafa&show_icons=true&theme=default)](https://github.com/anuraghazra/github-readme-stats)
-
-### Contribution Graph
-
-[![Thoriq Afa's Contribution Graph](https://github-readme-streak-stats.herokuapp.com/?user=thoriqafa&theme=default)](https://github.com/DenverCoder1/github-readme-streak-stats)
+*   [**SPK**](https://github.com/thoriqafa/SPK): Automation system for uploading purchase orders (SPK) from SAP to a digital approval platform.
+*   [**Data-Mining-Mini-Project**](https://github.com/thoriqafa/Data-Mining-Mini-Project): Classification project using machine learning to predict passenger survival based on Kaggle datasets.
+*   [**Smart-Parkir**](https://github.com/thoriqafa/Smart-Parkir): A parking management application developed using Java and SQL Server for automated slot allocation.
+*   [**Basic-Artificial-Neural-Network**](https://github.com/thoriqafa/Basic-Artificial-Neural-Network): An implementation of basic artificial neural network algorithms using MATLAB.
+*   [**CRUD-with-UNIGUI-Delphi-7-MySQL**](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL): A practical CRUD application utilizing UniGUI, Delphi 7, and MySQL.
 
 ### Current Focus
+*   Building reliable backend systems and scalable APIs.
+*   Implementing automation workflows to optimize integration processes.
+*   Continuing the practical application and research of Artificial Intelligence.
 
-*   Backend Development
-*   API Development
-*   Database Management
-*   Automation
-*   Artificial Intelligence
-*   System Integration
+### GitHub Activity & Contributions
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=thoriqafa&theme=tokyonight)
 
-### Let's Connect!
+### Contact
+*   **GitHub:** [github.com/thoriqafa](https://github.com/thoriqafa)
+*   **Location:** Indonesia
 
-*   **GitHub**: [thoriqafa](https://github.com/thoriqafa)
+---
+*Principles: Clean and maintainable code | Automation over repetitive work | Practical AI implementation | Reliable backend systems*
