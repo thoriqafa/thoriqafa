@@ -140,9 +140,10 @@ def get_section(readme, section):
     )
 
     if not match:
-        raise RuntimeError(
-            f"Section AUTO:{section} tidak ditemukan di README."
+        print(
+            f"Section AUTO:{section} belum ada di README; menggunakan content kosong."
         )
+        return ""
 
     return match.group(1).strip()
 
@@ -176,8 +177,13 @@ def update_section(readme, section, new_content):
     )
 
     if count == 0:
-        raise RuntimeError(
-            f"Section AUTO:{section} tidak ditemukan."
+        separator = "\n\n" if readme.strip() else ""
+        return (
+            readme.rstrip()
+            + separator
+            + f"{start_marker}\n"
+            + f"{new_content.strip()}\n"
+            + f"{end_marker}\n"
         )
 
     return updated_readme
