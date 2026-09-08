@@ -28,6 +28,15 @@ Backend Developer · AI Enthusiast based in Indonesia. Focused on building relia
 - Data & AI: Jupyter Notebook, MATLAB, SQL, basic ML pipelines
 - Tools: Git, Linux, CI/CD fundamentals, containerization basics
 
+**Highlighted Work**
+- **SPK** — Automated upload from SAP to Digital Approve (Pascal)
+- **dev-note** — PHP-based development notes system
+- **hydrogen-template** — TypeScript starter template
+- **Data-Mining-Mini-Project** — ML classification with Kaggle data (Jupyter Notebook)
+- **Basic-Artificial-Neural-Network** — ANN fundamentals in MATLAB
+- **Smart-Parkir** — Java + SQL Server parking management system
+- **CRUD-with-UNIGUI-Delphi-7-MySQL** — Delphi/MySQL CRUD application
+
 **Current Interests**
 - Distributed systems and message queues
 - LLM integration patterns for backend services
@@ -57,23 +66,23 @@ Backend Developer · AI Enthusiast based in Indonesia. Focused on building relia
 - MATLAB
 
 **Frameworks & Libraries**
-- React (Vite)
-- UNIGUI (Delphi)
-- Node.js / Express (implied by Pokemon-API)
+- React (Vite) — [`contact-app`](https://github.com/thoriqafa/contact-app), [`hydrogen-template`](https://github.com/thoriqafa/hydrogen-template)
+- UNIGUI (Delphi 7) — [`CRUD-with-UNIGUI-Delphi-7-MySQL`](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)
+- Node.js / Express — [`Pokemon-API`](https://github.com/thoriqafa/Pokemon-API)
 
 **Databases**
-- MySQL
-- SQL Server
+- MySQL — Delphi CRUD projects
+- SQL Server — [`Smart-Parkir`](https://github.com/thoriqafa/Smart-Parkir)
 
 **AI / Machine Learning**
-- Jupyter Notebook
-- MATLAB (Neural Networks)
-- Data Mining / Classification algorithms
+- Jupyter Notebook — [`Data-Mining-Mini-Project`](https://github.com/thoriqafa/Data-Mining-Mini-Project)
+- MATLAB (Neural Networks) — [`Basic-Artificial-Neural-Network`](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)
+- Classification algorithms (Data Mining)
 
 **Tools & Platforms**
 - Git / GitHub
-- SAP Integration
-- Automation Scripts
+- SAP Integration — [`SPK`](https://github.com/thoriqafa/SPK) (automated upload from SAP to Digital Approve)
+- Automation Scripts — [`spk-nodoc-log`](https://github.com/thoriqafa/spk-nodoc-log)
 
 **Focus Areas**
 - Backend Development
@@ -95,9 +104,9 @@ Backend Developer · AI Enthusiast based in Indonesia. Focused on building relia
 | **SPK** | Automated upload of SPK from SAP to Digital Approve — system integration & workflow automation | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
 | **Data-Mining-Mini-Project** | Passenger survival classification using ML algorithms on Kaggle dataset | Jupyter Notebook, Python | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
 | **Basic-Artificial-Neural-Network** | Fundamental ANN implementation with backpropagation | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
-| **dev-note** | Personal developer notes/knowledge base | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
-| **hydrogen-template** | Modern web template built with Hydrogen/Remix stack | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
 | **Smart-Parkir** | Smart parking application with automated slot assignment & SQL Server backend | Java, SQL Server | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
+| **hydrogen-template** | Modern web template built with Hydrogen/Remix stack | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
+| **dev-note** | Personal developer notes/knowledge base | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
 <!-- AUTO:PROJECTS:END -->
