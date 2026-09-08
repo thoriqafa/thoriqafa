@@ -1,8 +1,8 @@
 # Hi, I'm Thoriq 👋
 
-### Laravel & Full-Stack Developer
+### Application Developer
 
-Saya membangun aplikasi web dan sistem informasi.
+I build web applications, information systems, and business solutions.
 
 ---
 
@@ -50,4 +50,4 @@ Saya membangun aplikasi web dan sistem informasi.
 
 ## 📫 Contact
 
-Email: your@email.com
+Email: thoriqafa5@gmail.com
