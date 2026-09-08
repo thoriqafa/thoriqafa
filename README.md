@@ -29,13 +29,13 @@ Backend Developer · AI Enthusiast based in Indonesia. Focused on building relia
 - Tools: Git, Linux, CI/CD fundamentals, containerization basics
 
 **Highlighted Work**
-- **SPK** — Automated upload from SAP to Digital Approve (Pascal)
-- **dev-note** — PHP-based development notes system
-- **hydrogen-template** — TypeScript starter template
-- **Data-Mining-Mini-Project** — ML classification with Kaggle data (Jupyter Notebook)
-- **Basic-Artificial-Neural-Network** — ANN fundamentals in MATLAB
-- **Smart-Parkir** — Java + SQL Server parking management system
-- **CRUD-with-UNIGUI-Delphi-7-MySQL** — Delphi/MySQL CRUD application
+- **[SPK](https://github.com/thoriqafa/SPK)** — Automated upload from SAP to Digital Approve (Pascal)
+- **[dev-note](https://github.com/thoriqafa/dev-note)** — PHP-based development notes system
+- **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** — TypeScript starter template
+- **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** — ML classification with Kaggle data (Jupyter Notebook)
+- **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** — ANN fundamentals in MATLAB
+- **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** — Java + SQL Server parking management system
+- **[CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)** — Delphi/MySQL CRUD application
 
 **Current Interests**
 - Distributed systems and message queues
@@ -87,9 +87,10 @@ Backend Developer · AI Enthusiast based in Indonesia. Focused on building relia
 **Focus Areas**
 - Backend Development
 - API Development
-- System Integration
+- Database
 - Automation
-- Practical AI Implementation
+- Artificial Intelligence
+- System Integration
 <!-- AUTO:TECHSTACK:END -->
 
 ---
@@ -101,12 +102,12 @@ Backend Developer · AI Enthusiast based in Indonesia. Focused on building relia
 
 | Project | Description | Tech | Link |
 |---------|-------------|------|------|
-| **SPK** | Automated upload of SPK from SAP to Digital Approve — system integration & workflow automation | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
+| **SPK** | Automated SPK upload from SAP to Digital Approve — system integration & workflow automation | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
+| **dev-note** | Personal developer knowledge base and notes application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
+| **hydrogen-template** | Modern web template built with Hydrogen/Remix stack | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
 | **Data-Mining-Mini-Project** | Passenger survival classification using ML algorithms on Kaggle dataset | Jupyter Notebook, Python | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
 | **Basic-Artificial-Neural-Network** | Fundamental ANN implementation with backpropagation | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
 | **Smart-Parkir** | Smart parking application with automated slot assignment & SQL Server backend | Java, SQL Server | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
-| **hydrogen-template** | Modern web template built with Hydrogen/Remix stack | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
-| **dev-note** | Personal developer notes/knowledge base | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
 <!-- AUTO:PROJECTS:END -->
