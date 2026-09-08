@@ -1,5 +1,6 @@
 import os
 import re
+import time
 import yaml
 
 from openai import OpenAI
@@ -10,6 +11,7 @@ from prompts import SYSTEM_PROMPT, build_prompt
 
 CONFIG_FILE = "config/profile.yml"
 README_FILE = "README.md"
+AI_RETRY_COUNT = 3
 
 
 # ============================================================
@@ -42,6 +44,24 @@ def get_ai_client():
     )
 
 
+def extract_ai_content(response, section):
+    if not response.choices:
+        raise RuntimeError(
+            f"AI tidak mengembalikan choices untuk section {section}. "
+            f"Response: {response}"
+        )
+
+    message = response.choices[0].message
+
+    if not message or not message.content:
+        raise RuntimeError(
+            f"AI tidak menghasilkan content untuk section {section}. "
+            f"Response: {response}"
+        )
+
+    return message.content
+
+
 def generate_section(
     client,
     section,
@@ -63,28 +83,43 @@ def generate_section(
         repositories=repositories,
     )
 
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {
-                "role": "system",
-                "content": SYSTEM_PROMPT,
-            },
-            {
-                "role": "user",
-                "content": prompt,
-            },
-        ],
-    )
+    last_error = None
 
-    content = response.choices[0].message.content
+    for attempt in range(1, AI_RETRY_COUNT + 1):
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": SYSTEM_PROMPT,
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt,
+                    },
+                ],
+            )
 
-    if not content:
-        raise RuntimeError(
-            f"AI tidak menghasilkan content untuk section {section}."
-        )
+            content = extract_ai_content(response, section)
+            return clean_markdown(content)
 
-    return clean_markdown(content)
+        except Exception as error:
+            last_error = error
+
+            if attempt == AI_RETRY_COUNT:
+                break
+
+            print(
+                f"AI gagal membuat AUTO:{section} "
+                f"(percobaan {attempt}/{AI_RETRY_COUNT}). Mencoba lagi..."
+            )
+            time.sleep(attempt * 2)
+
+    raise RuntimeError(
+        f"AI gagal membuat content untuk section {section} "
+        f"setelah {AI_RETRY_COUNT} percobaan."
+    ) from last_error
 
 
 # ============================================================
