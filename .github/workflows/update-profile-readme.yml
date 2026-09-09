@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -38,6 +38,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Generate Charts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_charts.py
+
       - name: Generate README
         env:
           API_KEY_AI: ${{ secrets.API_KEY_AI }}
@@ -45,17 +51,17 @@ jobs:
         run: |
           python scripts/generate_readme.py
 
-      - name: Commit README
+      - name: Commit Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add README.md
+          git add README.md assets/
 
           if git diff --cached --quiet; then
-            echo "README tidak berubah."
+            echo "No changes to commit."
             exit 0
           fi
 
-          git commit -m "chore: update profile README"
+          git commit -m "chore: update profile README and charts"
           git push

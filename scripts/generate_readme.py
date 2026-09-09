@@ -5,7 +5,7 @@ import yaml
 
 from openai import OpenAI
 
-from github_data import get_profile, get_repositories
+from github_data import get_profile, get_repositories, get_stats_data
 from prompts import SYSTEM_PROMPT, build_prompt
 
 
@@ -150,6 +150,16 @@ def clean_markdown(content):
     return content
 
 
+def generate_stats_section():
+    return '<img src="assets/github-stats.svg" alt="GitHub Statistics" width="495"/>'
+
+def generate_streak_section():
+    return '<img src="assets/github-streak.svg" alt="Contribution Streak" width="495"/>'
+
+def generate_activity_section():
+    return '<img src="assets/github-activity.svg" alt="Contribution Activity" width="495"/>'
+
+
 def get_section(readme, section):
     """
     Mengambil isi di antara:
@@ -276,15 +286,22 @@ def main():
     client = get_ai_client()
 
     # Section yang boleh diperbarui AI.
-    sections = [
+    ai_sections = [
         "ABOUT",
         "TECHSTACK",
         "PROJECTS",
     ]
 
+    # Section yang di-generate dari SVG (bukan AI).
+    svg_sections = {
+        "STATS": generate_stats_section,
+        "STREAK": generate_streak_section,
+        "ACTIVITY": generate_activity_section,
+    }
+
     updated_readme = readme
 
-    for section in sections:
+    for section in ai_sections:
 
         print(
             f"Updating AUTO:{section}..."
@@ -303,6 +320,17 @@ def main():
             github_profile=github_profile,
             repositories=repositories,
         )
+
+        updated_readme = update_section(
+            updated_readme,
+            section,
+            new_content,
+        )
+
+    for section, generator in svg_sections.items():
+        print(f"Updating AUTO:{section}...")
+
+        new_content = generator()
 
         updated_readme = update_section(
             updated_readme,
