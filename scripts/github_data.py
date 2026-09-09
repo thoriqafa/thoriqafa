@@ -103,8 +103,10 @@ def get_contribution_data():
     }
     """
     now = datetime.now(timezone.utc)
-    to_date = now.replace(hour=23, minute=59, second=59).isoformat() + "Z"
-    from_date = (now - timedelta(days=365)).replace(hour=0, minute=0, second=0).isoformat() + "Z"
+    # GitHub's DateTime scalar requires "YYYY-MM-DDTHH:MM:SSZ" (no microseconds,
+    # no numeric offset), and the from/to range may span at most one year.
+    to_date = now.replace(hour=23, minute=59, second=59, microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
+    from_date = (now - timedelta(days=364)).replace(hour=0, minute=0, second=0, microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     variables = {
         "username": GITHUB_USERNAME,
