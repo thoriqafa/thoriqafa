@@ -9,41 +9,38 @@ I build web applications, information systems, and business solutions.
 ## 👨‍💻 About Me
 
 <!-- AUTO:ABOUT:START -->
-Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer focused on building reliable backend systems, API development, database design, automation, and practical AI implementation.
+Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer focused on reliable backend systems, API design, database modeling, automation, and practical AI integration.
 
-**Core Focus**
-- Backend Development & API Design
-- Database Modeling & Optimization
-- Process Automation & System Integration
-- Applied Machine Learning & AI Exploration
+**Core Focus**  
+- Backend Development & API Design  
+- Database Modeling & Optimization  
+- Process Automation & System Integration  
+- Applied Machine Learning & AI Exploration  
 
-**Development Principles**
-- Clean, maintainable, and testable code
-- Automate repetitive workflows
-- Practical AI over hype-driven experimentation
-- Build systems that scale and recover gracefully
+**Development Principles**  
+- Write clean, maintainable, and testable code  
+- Automate repetitive workflows  
+- Prioritize practical AI over hype‑driven experiments  
+- Build systems that scale and recover gracefully  
 
-**Tech Background**
-- Languages: Python, PHP, JavaScript/TypeScript, Java, C++, Pascal (Delphi)
-- Data & AI: Jupyter Notebook, MATLAB, SQL, basic ML pipelines
-- Tools: Git, Linux, CI/CD fundamentals, containerization basics
+**Tech Background**  
+- **Languages:** Python, PHP, JavaScript/TypeScript, Java, C++, Pascal (Delphi)  
+- **Data & AI:** Jupyter Notebook, MATLAB, SQL, basic ML pipelines  
+- **Tools:** Git, Linux, CI/CD fundamentals, containerization basics  
 
-**Highlighted Work**
-- **[SPK](https://github.com/thoriqafa/SPK)** — Automated upload from SAP to Digital Approve (Pascal)
-- **[dev-note](https://github.com/thoriqafa/dev-note)** — PHP-based development notes system
-- **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** — TypeScript starter template
-- **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** — ML classification with Kaggle data (Jupyter Notebook)
-- **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** — ANN fundamentals in MATLAB
-- **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** — Java + SQL Server parking management system
-- **[CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)** — Delphi/MySQL CRUD application
+**Highlighted Work**  
+- **[SPK](https://github.com/thoriqafa/SPK)** – Automated upload from SAP to Digital Approve (Pascal)  
+- **[dev-note](https://github.com/thoriqafa/dev-note)** – PHP‑based personal development notes system  
+- **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** – Minimal TypeScript starter template  
+- **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** – Passenger survival classification using ML (Jupyter Notebook)  
+- **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** – ANN fundamentals implemented in MATLAB  
+- **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** – Java + SQL Server smart parking management system  
 
-**Current Interests**
-- Distributed systems and message queues
-- LLM integration patterns for backend services
-- Observability and developer tooling
-- Open-source contribution
-
----
+**Current Interests**  
+- Distributed systems and message queues  
+- LLM integration patterns for backend services  
+- Observability and developer tooling  
+- Open‑source contributions  
 
 *19 public repositories · Actively learning and building*
 <!-- AUTO:ABOUT:END -->
@@ -55,41 +52,41 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 <!-- AUTO:TECHSTACK:START -->
 ## Tech Stack
 
-**Languages**
-- Python
-- PHP
-- JavaScript / TypeScript
-- Java
-- Pascal (Delphi)
-- C++
-- HTML / CSS
-- MATLAB
+**Languages**  
+- Python — [`thoriqafa`](https://github.com/thoriqafa/thoriqafa)  
+- PHP — [`dev-note`](https://github.com/thoriqafa/dev-note), [`spk-nodoc-log`](https://github.com/thoriqafa/spk-nodoc-log)  
+- JavaScript / TypeScript — [`contact-app`](https://github.com/thoriqafa/contact-app), [`notes-app`](https://github.com/thoriqafa/notes-app), [`hydrogen-template`](https://github.com/thoriqafa/hydrogen-template) (TypeScript)  
+- Java — [`BasicOOPJava`](https://github.com/thoriqafa/BasicOOPJava), [`Smart-Parkir`](https://github.com/thoriqafa/Smart-Parkir)  
+- Pascal (Delphi) — [`SPK`](https://github.com/thoriqafa/SPK), [`CRUD-with-UNIGUI-Delphi-7-MySQL`](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)  
+- C++ — [`multi-platform-app`](https://github.com/thoriqafa/multi-platform-app)  
+- HTML / CSS — [`Leave_Request_App_V2`](https://github.com/thoriqafa/Leave_Request_App_V2)  
+- MATLAB — [`Basic-Artificial-Neural-Network`](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)  
+- Jupyter Notebook — [`Data-Mining-Mini-Project`](https://github.com/thoriqafa/Data-Mining-Mini-Project)
 
-**Frameworks & Libraries**
-- React (Vite) — [`contact-app`](https://github.com/thoriqafa/contact-app), [`hydrogen-template`](https://github.com/thoriqafa/hydrogen-template)
-- UNIGUI (Delphi 7) — [`CRUD-with-UNIGUI-Delphi-7-MySQL`](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)
+**Frameworks & Libraries**  
+- React (Vite) — [`contact-app`](https://github.com/thoriqafa/contact-app), [`hydrogen-template`](https://github.com/thoriqafa/hydrogen-template)  
+- UNIGUI (Delphi 7) — [`CRUD-with-UNIGUI-Delphi-7-MySQL`](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)  
 - Node.js / Express — [`Pokemon-API`](https://github.com/thoriqafa/Pokemon-API)
 
-**Databases**
-- MySQL — Delphi CRUD projects
+**Databases**  
+- MySQL — Delphi CRUD projects (`CRUD-with-UNIGUI-Delphi-7-MySQL`, `Simple-CRUD-Delphi-7-With-MySQL`)  
 - SQL Server — [`Smart-Parkir`](https://github.com/thoriqafa/Smart-Parkir)
 
-**AI / Machine Learning**
-- Jupyter Notebook — [`Data-Mining-Mini-Project`](https://github.com/thoriqafa/Data-Mining-Mini-Project)
+**AI / Machine Learning**  
+- Jupyter Notebook — [`Data-Mining-Mini-Project`](https://github.com/thoriqafa/Data-Mining-Mini-Project)  
 - MATLAB (Neural Networks) — [`Basic-Artificial-Neural-Network`](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)
-- Classification algorithms (Data Mining)
 
-**Tools & Platforms**
-- Git / GitHub
-- SAP Integration — [`SPK`](https://github.com/thoriqafa/SPK) (automated upload from SAP to Digital Approve)
+**Tools & Platforms**  
+- Git / GitHub  
+- SAP Integration — [`SPK`](https://github.com/thoriqafa/SPK)  
 - Automation Scripts — [`spk-nodoc-log`](https://github.com/thoriqafa/spk-nodoc-log)
 
-**Focus Areas**
-- Backend Development
-- API Development
-- Database
-- Automation
-- Artificial Intelligence
+**Focus Areas**  
+- Backend Development  
+- API Development  
+- Database Management  
+- Automation  
+- Artificial Intelligence  
 - System Integration
 <!-- AUTO:TECHSTACK:END -->
 
@@ -102,12 +99,12 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 
 | Project | Description | Tech | Link |
 |---------|-------------|------|------|
-| **SPK** | Automated SPK upload from SAP to Digital Approve — system integration & workflow automation | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
-| **dev-note** | Personal developer knowledge base and notes application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
-| **hydrogen-template** | Modern web template built with Hydrogen/Remix stack | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
-| **Data-Mining-Mini-Project** | Passenger survival classification using ML algorithms on Kaggle dataset | Jupyter Notebook, Python | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
-| **Basic-Artificial-Neural-Network** | Fundamental ANN implementation with backpropagation | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
-| **Smart-Parkir** | Smart parking application with automated slot assignment & SQL Server backend | Java, SQL Server | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
+| **SPK** | Automated SPK document upload system from SAP to Digital Approve | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
+| **dev-note** | Personal developer knowledge base and notes management application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
+| **hydrogen-template** | Web application project template built with the Hydrogen framework | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
+| **Data-Mining-Mini-Project** | Passenger survival classification using machine learning algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
+| **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
+| **Smart-Parkir** | Smart parking application featuring automated parking slot assignment | Java, SQL Server | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
 <!-- AUTO:PROJECTS:END -->
@@ -117,6 +114,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 ## 📊 GitHub Statistics
 
 <!-- AUTO:STATS:START -->
+<img src="assets/github-stats.svg" alt="GitHub Statistics" width="495"/>
 <!-- AUTO:STATS:END -->
 
 ---
@@ -124,6 +122,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 ## 🔥 Contribution Streak
 
 <!-- AUTO:STREAK:START -->
+<img src="assets/github-streak.svg" alt="Contribution Streak" width="495"/>
 <!-- AUTO:STREAK:END -->
 
 ---
@@ -131,6 +130,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 ## 📈 Contribution Activity
 
 <!-- AUTO:ACTIVITY:START -->
+<img src="assets/github-activity.svg" alt="Contribution Activity" width="495"/>
 <!-- AUTO:ACTIVITY:END -->
 
 ---
