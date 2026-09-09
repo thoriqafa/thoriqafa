@@ -154,7 +154,7 @@ def generate_stats_section():
     return '<img src="assets/github-stats.svg" alt="GitHub Statistics" width="495"/>'
 
 def generate_streak_section():
-    return '<img src="assets/github-streak.svg" alt="Contribution Streak" width="495"/>'
+    return '<img src="https://streak-stats.demolab.com/?user=thoriqafa&theme=tokyonight" alt="Contribution Streak" width="495"/>'
 
 def generate_activity_section():
     return '<img src="assets/github-activity.svg" alt="Contribution Activity" width="495"/>'
