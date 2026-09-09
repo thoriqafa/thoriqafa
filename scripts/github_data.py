@@ -1,6 +1,6 @@
 import os
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 GITHUB_USERNAME = "thoriqafa"
 GITHUB_API = "https://api.github.com"
@@ -102,7 +102,7 @@ def get_contribution_data():
         }
     }
     """
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     to_date = now.replace(hour=23, minute=59, second=59).isoformat() + "Z"
     from_date = (now - timedelta(days=365)).replace(hour=0, minute=0, second=0).isoformat() + "Z"
 
@@ -147,7 +147,7 @@ def calculate_streaks(days):
     days_sorted = sorted(days, key=lambda d: d["date"])
     date_to_count = {d["date"]: d["count"] for d in days_sorted}
 
-    today = datetime.utcnow().date()
+    today = datetime.now(timezone.utc).date()
     current_streak = 0
     check_date = today
 

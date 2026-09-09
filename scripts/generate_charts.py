@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import os
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from github_data import get_stats_data
+
+def utcnow():
+    return datetime.now(timezone.utc)
 
 ASSETS_DIR = "assets"
 STATS_SVG = os.path.join(ASSETS_DIR, "github-stats.svg")
@@ -92,7 +95,7 @@ def generate_stats_svg(data):
   </g>
 '''
 
-    svg += f'''  <text x="{card_width - 12}" y="{card_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
+    svg += f'''  <text x="{card_width - 12}" y="{card_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
 </svg>'''
 
     return svg
@@ -140,7 +143,7 @@ def generate_streak_svg(data):
     <text x="0" y="76" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="{COLORS['text_muted']}">days</text>
   </g>
 
-  <text x="{card_width - 12}" y="{card_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
+  <text x="{card_width - 12}" y="{card_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
 </svg>'''
 
     return svg
@@ -153,7 +156,7 @@ def generate_activity_svg(data):
     days_sorted = sorted(days, key=lambda d: d["date"])
     date_to_count = {d["date"]: d["count"] for d in days_sorted}
 
-    today = datetime.utcnow().date()
+    today = utcnow().date()
     start_date = today - timedelta(days=364)
 
     weeks = []
@@ -247,7 +250,7 @@ def generate_activity_svg(data):
         svg += f'''  <rect x="{x}" y="{legend_y - 8}" width="10" height="10" rx="2" fill="{color}"/>
 '''
     svg += f'''  <text x="{legend_x + 45 + 4 * 14 + 5}" y="{legend_y}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="{COLORS['text_secondary']}">More</text>
-  <text x="{svg_width - 12}" y="{svg_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
+  <text x="{svg_width - 12}" y="{svg_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
 </svg>'''
 
     return svg
@@ -267,10 +270,11 @@ def generate_empty_activity_svg(username):
   <rect x="0" y="0" width="{card_width}" height="48" rx="12" fill="{COLORS['bg']}" stroke="none"/>
   <text x="24" y="32" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="{COLORS['text_primary']}">📈 Contribution Activity</text>
   <text x="{card_width/2}" y="{card_height/2}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="{COLORS['text_secondary']}" text-anchor="middle" dominant-baseline="middle">No contribution data available</text>
-  <text x="{card_width - 12}" y="{card_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
+  <text x="{card_width - 12}" y="{card_height - 10}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="{COLORS['text_muted']}" text-anchor="end">Updated {utcnow().strftime('%Y-%m-%d %H:%M')} UTC</text>
 </svg>'''
 
 def save_svg(path, content):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
     print(f"Saved: {path}")
