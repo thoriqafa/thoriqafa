@@ -9,7 +9,7 @@ I build web applications, information systems, and business solutions.
 ## 👨‍💻 About Me
 
 <!-- AUTO:ABOUT:START -->
-Backend Developer · AI Enthusiast based in Indonesia. Focused on building reliable backend systems, API development, database design, automation, and practical AI implementation.
+Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer focused on building reliable backend systems, API development, database design, automation, and practical AI implementation.
 
 **Core Focus**
 - Backend Development & API Design
