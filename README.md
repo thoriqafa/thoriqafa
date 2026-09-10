@@ -9,7 +9,7 @@ I build web applications, information systems, and business solutions.
 ## 👨‍💻 About Me
 
 <!-- AUTO:ABOUT:START -->
-Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer concentrating on reliable services, clean API design, database modeling, automation, and pragmatic AI integration.
+Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer focused on reliable services, clean API design, database modeling, automation, and pragmatic AI integration.
 
 **Core Focus**  
 - Backend development & API design  
@@ -60,7 +60,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 - Java — [BasicOOPJava](https://github.com/thoriqafa/BasicOOPJava), [Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)  
 - Pascal — [SPK](https://github.com/thoriqafa/SPK), [CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL), [Simple-CRUD-Delphi-7-With-MySQL](https://github.com/thoriqafa/Simple-CRUD-Delphi-7-With-MySQL)  
 - C++ — [multi-platform-app](https://github.com/thoriqafa/multi-platform-app)  
-- HTML / CSS — [Leave_Request_App_V2](https://github.com/thoriqafa/Leave_Request_App_V2)  
+- HTML — [Leave_Request_App_V2](https://github.com/thoriqafa/Leave_Request_App_V2), [thoriqafa.github.io](https://github.com/thoriqafa/thoriqafa.github.io)  
 - MATLAB — [Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)  
 - Jupyter Notebook — [Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)
 
@@ -103,8 +103,8 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 | **dev-note** | Personal developer knowledge base and notes management application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
 | **hydrogen-template** | Web application project template built with the Hydrogen framework | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
 | **Data-Mining-Mini-Project** | Passenger survival classification using machine learning algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
-| **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
-| **Smart-Parkir** | Smart parking application featuring automated parking slot assignment | Java, SQL Server | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
+| **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms in MATLAB | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
+| **Smart-Parkir** | Smart parking application with automated parking slot assignment using Java and SQL Server | Java | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
 <!-- AUTO:PROJECTS:END -->
