@@ -104,7 +104,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 | **hydrogen-template** | Web application project template built with the Hydrogen framework | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
 | **Data-Mining-Mini-Project** | Passenger survival classification using machine learning algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
 | **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms in MATLAB | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
-| **Smart-Parkir** | Smart parking application with automated parking slot assignment using Java and SQL Server | Java | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
+| **Smart-Parkir** | Smart parking application with automated slot assignment using Java and SQL Server | Java | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
 <!-- AUTO:PROJECTS:END -->
