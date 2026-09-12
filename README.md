@@ -66,7 +66,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 
 **Frameworks & Libraries**  
 - React (Vite) — [contact-app](https://github.com/thoriqafa/contact-app), [hydrogen-template](https://github.com/thoriqafa/hydrogen-template)  
-- UNIGUI (Delphi 7) — [CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL)
+- UNIGUI (Delphi 7) — [CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL), [Simple-CRUD-Delphi-7-With-MySQL](https://github.com/thoriqafa/Simple-CRUD-Delphi-7-With-MySQL)
 
 **Databases**  
 - MySQL — [CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL), [Simple-CRUD-Delphi-7-With-MySQL](https://github.com/thoriqafa/Simple-CRUD-Delphi-7-With-MySQL)  
