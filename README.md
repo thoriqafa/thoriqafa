@@ -9,24 +9,25 @@ I build web applications, information systems, and business solutions.
 ## 👨‍💻 About Me
 
 <!-- AUTO:ABOUT:START -->
-Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer focused on reliable services, clean API design, database modeling, automation, and pragmatic AI integration.
+Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused on application development, automation, system integration, and AI technology exploration.
 
 **Core Focus**  
-- Backend development & API design  
-- Database modeling & performance tuning  
-- Workflow automation & system integration  
-- Applied machine‑learning and AI prototyping  
+- Backend Development  
+- API Development  
+- Database  
+- Automation  
+- Artificial Intelligence  
+- System Integration  
 
 **Development Principles**  
-- Write clean, maintainable, testable code  
-- Automate repetitive tasks  
-- Favor practical AI over hype  
-- Build resilient, scalable systems  
+- Clean and maintainable code  
+- Automation over repetitive work  
+- Practical AI implementation  
+- Reliable backend systems  
 
 **Tech Background**  
-- **Languages:** Python, PHP, JavaScript/TypeScript, Java, C++, Pascal (Delphi)  
-- **Data & AI:** Jupyter Notebook, MATLAB, SQL, basic ML pipelines  
-- **Tools:** Git, Linux, CI/CD basics, containers  
+- **Languages:** Python, PHP, JavaScript, TypeScript, Java, C++, Pascal (Delphi), MATLAB, Jupyter Notebook, SQL, HTML  
+- **Tools:** Git, Linux  
 
 **Highlighted Work**  
 - **[SPK](https://github.com/thoriqafa/SPK)** – Automated SAP‑to‑Digital Approve upload (Pascal)  
@@ -102,9 +103,9 @@ Backend Developer · AI Enthusiast based in Indonesia. Junior backend developer 
 | **SPK** | Automated SPK document upload system from SAP to Digital Approve | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
 | **dev-note** | Personal developer knowledge base and notes management application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
 | **hydrogen-template** | Web application project template built with the Hydrogen framework | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
-| **Data-Mining-Mini-Project** | Passenger survival classification using machine learning algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
-| **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms in MATLAB | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
-| **Smart-Parkir** | Smart parking application with automated slot assignment using Java and SQL Server | Java | [Repo](https://github.com/thoriqafa/Smart-Parkir) |
+| **spk-nodoc-log** | SPK logging utility for document processing without documentation | PHP | [Repo](https://github.com/thoriqafa/spk-nodoc-log) |
+| **Data-Mining-Mini-Project** | Passenger survival classification using ML algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
+| **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
 <!-- AUTO:PROJECTS:END -->
