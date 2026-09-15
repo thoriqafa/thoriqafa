@@ -33,9 +33,9 @@ Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused
 - **[SPK](https://github.com/thoriqafa/SPK)** – Automated SAP‑to‑Digital Approve upload (Pascal)  
 - **[dev-note](https://github.com/thoriqafa/dev-note)** – PHP‑based personal development notes  
 - **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** – Minimal TypeScript starter template  
-- **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** – Passenger‑survival classification using ML (Jupyter)  
+- **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** – Passenger‑survival classification using ML (Jupyter Notebook)  
 - **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** – Core ANN implementation in MATLAB  
-- **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** – Java & SQL‑Server smart parking management system  
+- **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** – Java & SQL Server smart parking management system  
 
 **Current Interests**  
 - Distributed systems & message queues  
@@ -104,7 +104,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused
 | **dev-note** | Developer knowledge base and notes management application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
 | **hydrogen-template** | Web application project template built with the Hydrogen framework | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
 | **spk-nodoc-log** | SPK logging utility for document processing without documentation | PHP | [Repo](https://github.com/thoriqafa/spk-nodoc-log) |
-| **Data-Mining-Mini-Project** | Passenger survival classification using ML on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
+| **Data-Mining-Mini-Project** | Passenger survival classification using ML algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
 | **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms in MATLAB | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
 
 *More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
