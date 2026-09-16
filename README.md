@@ -26,7 +26,7 @@ Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused
 - Reliable backend systems  
 
 **Tech Background**  
-- **Languages:** Python, PHP, JavaScript, TypeScript, Java, C++, Pascal (Delphi), MATLAB, Jupyter Notebook, SQL, HTML  
+- **Languages:** Python, PHP, Pascal (Delphi), TypeScript, JavaScript, Java, C++, Jupyter Notebook, MATLAB, SQL, HTML  
 - **Tools:** Git, Linux  
 
 **Highlighted Work**  
