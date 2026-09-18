@@ -5,13 +5,20 @@ import yaml
 
 from openai import OpenAI
 
-from github_data import get_profile, get_repositories, get_stats_data
+from badges import build_badge_groups, render_badge_groups, validate_badge_content
+from github_data import GITHUB_USERNAME, get_profile, get_repositories
 from prompts import SYSTEM_PROMPT, build_prompt
 
 
 CONFIG_FILE = "config/profile.yml"
 README_FILE = "README.md"
 AI_RETRY_COUNT = 3
+
+# Section yang diisi AI.
+AI_SECTIONS = ("ABOUT", "TECHSTACK", "PROJECTS")
+
+# Section yang di-generate dari file SVG (bukan AI).
+SVG_SECTIONS = ("STATS", "STREAK", "ACTIVITY")
 
 
 # ============================================================
@@ -69,6 +76,8 @@ def generate_section(
     config,
     github_profile,
     repositories,
+    verified_badges=None,
+    max_featured_projects=None,
 ):
     model = os.environ.get(
         "AI_MODEL",
@@ -81,6 +90,8 @@ def generate_section(
         profile_config=config,
         github_profile=github_profile,
         repositories=repositories,
+        verified_badges=verified_badges,
+        max_featured_projects=max_featured_projects,
     )
 
     last_error = None
@@ -150,14 +161,43 @@ def clean_markdown(content):
     return content
 
 
+def centered_image(src, alt, width=495):
+    return (
+        '<p align="center">\n'
+        f'  <img src="{src}" alt="{alt}" width="{width}"/>\n'
+        '</p>'
+    )
+
+
 def generate_stats_section():
-    return '<img src="assets/github-stats.svg" alt="GitHub Statistics" width="495"/>'
+    return centered_image("assets/github-stats.svg", "GitHub Statistics")
+
 
 def generate_streak_section():
-    return '<img src="https://streak-stats.demolab.com/?user=thoriqafa&theme=tokyonight" alt="Contribution Streak" width="495"/>'
+    return (
+        '<p align="center">\n'
+        '  <img\n'
+        f'    src="https://streak-stats.demolab.com/?user={GITHUB_USERNAME}'
+        '&theme=tokyonight"\n'
+        '    alt="GitHub Contribution Streak"\n'
+        '    width="495"\n'
+        '  />\n'
+        '</p>'
+    )
+
 
 def generate_activity_section():
-    return '<img src="assets/github-activity.svg" alt="Contribution Activity" width="495"/>'
+    return centered_image(
+        "assets/github-activity.svg",
+        "GitHub Contribution Activity",
+    )
+
+
+SECTION_GENERATORS = {
+    "STATS": generate_stats_section,
+    "STREAK": generate_streak_section,
+    "ACTIVITY": generate_activity_section,
+}
 
 
 def get_section(readme, section):
@@ -270,6 +310,9 @@ def main():
     print("Loading profile configuration...")
     config = load_config()
 
+    readme_config = config.get("readme") or {}
+    max_featured_projects = readme_config.get("max_featured_projects")
+
     print("Loading existing README...")
     readme = load_readme()
 
@@ -283,25 +326,19 @@ def main():
         f"Found {len(repositories)} repositories."
     )
 
+    print("Building tech stack badges...")
+    badge_groups = build_badge_groups(config, repositories)
+    verified_badges = render_badge_groups(badge_groups)
+    print(
+        f"Prepared {len(badge_groups)} badge groups "
+        f"({sum(len(g['badges']) for g in badge_groups)} badges)."
+    )
+
     client = get_ai_client()
-
-    # Section yang boleh diperbarui AI.
-    ai_sections = [
-        "ABOUT",
-        "TECHSTACK",
-        "PROJECTS",
-    ]
-
-    # Section yang di-generate dari SVG (bukan AI).
-    svg_sections = {
-        "STATS": generate_stats_section,
-        "STREAK": generate_streak_section,
-        "ACTIVITY": generate_activity_section,
-    }
 
     updated_readme = readme
 
-    for section in ai_sections:
+    for section in AI_SECTIONS:
 
         print(
             f"Updating AUTO:{section}..."
@@ -312,6 +349,13 @@ def main():
             section,
         )
 
+        if section == "TECHSTACK" and not badge_groups:
+            print(
+                "Tidak ada badge pada config tech_stack; "
+                "isi AUTO:TECHSTACK dibiarkan seperti sekarang."
+            )
+            continue
+
         new_content = generate_section(
             client=client,
             section=section,
@@ -319,7 +363,21 @@ def main():
             config=config,
             github_profile=github_profile,
             repositories=repositories,
+            verified_badges=(
+                verified_badges if section == "TECHSTACK" else None
+            ),
+            max_featured_projects=max_featured_projects,
         )
+
+        if section == "TECHSTACK" and not validate_badge_content(
+            new_content,
+            badge_groups,
+        ):
+            print(
+                "Output AI untuk AUTO:TECHSTACK tidak sesuai daftar badge; "
+                "memakai badge hasil generate kode."
+            )
+            new_content = verified_badges
 
         updated_readme = update_section(
             updated_readme,
@@ -327,10 +385,10 @@ def main():
             new_content,
         )
 
-    for section, generator in svg_sections.items():
+    for section in SVG_SECTIONS:
         print(f"Updating AUTO:{section}...")
 
-        new_content = generator()
+        new_content = SECTION_GENERATORS[section]()
 
         updated_readme = update_section(
             updated_readme,

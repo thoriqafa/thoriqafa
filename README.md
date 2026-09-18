@@ -1,49 +1,30 @@
 # Hi, I'm Thoriq 👋
 
-### Application Developer
+### Application Developer · Backend · AI Enthusiast
 
-I build web applications, information systems, and business solutions.
+I build **web applications, information systems, automation tools, and backend services** with a focus on practical solutions and reliable systems.
 
 ---
 
 ## 👨‍💻 About Me
 
 <!-- AUTO:ABOUT:START -->
-Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused on application development, automation, system integration, and AI technology exploration.
+I'm a developer from Indonesia focused on:
 
-**Core Focus**  
-- Backend Development  
-- API Development  
-- Database  
-- Automation  
-- Artificial Intelligence  
-- System Integration  
+* 🔧 Backend & Application Development
+* 🌐 API & System Integration
+* 🗄️ Database & Data Management
+* ⚙️ Automation & Developer Tooling
+* 🤖 Artificial Intelligence & LLM Integration
+* 🐳 Infrastructure & Deployment
 
-**Development Principles**  
-- Clean and maintainable code  
-- Automation over repetitive work  
-- Practical AI implementation  
-- Reliable backend systems  
+### Development Principles
 
-**Tech Background**  
-- **Languages:** Python, PHP, Pascal (Delphi), TypeScript, JavaScript, Java, C++, Jupyter Notebook, MATLAB, SQL, HTML  
-- **Tools:** Git, Linux  
-
-**Highlighted Work**  
-- **[SPK](https://github.com/thoriqafa/SPK)** – Automated SPK upload from SAP to Digital Approve (Pascal)  
-- **[dev-note](https://github.com/thoriqafa/dev-note)** – PHP-based personal development notes  
-- **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** – Minimal TypeScript starter template  
-- **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** – Passenger-survival classification using ML (Jupyter Notebook)  
-- **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** – Core ANN implementation in MATLAB  
-- **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** – Java & SQL Server smart parking management system  
-
-**Current Interests**  
-- Distributed systems & message queues  
-- LLM integration patterns for backend services  
-- Observability & developer tooling  
-- Open-source contributions  
-
-*19 public repositories · Actively learning and building*
+* Write clean and maintainable code
+* Automate repetitive processes
+* Build practical solutions
+* Keep systems reliable and maintainable
+* Continuously explore new technologies
 <!-- AUTO:ABOUT:END -->
 
 ---
@@ -51,19 +32,40 @@ Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused
 ## 🛠️ Tech Stack
 
 <!-- AUTO:TECHSTACK:START -->
-## Tech Stack
+### Languages
 
-**Languages**
-- Python — [thoriqafa](https://github.com/thoriqafa/thoriqafa)
-- PHP — [dev-note](https://github.com/thoriqafa/dev-note), [spk-nodoc-log](https://github.com/thoriqafa/spk-nodoc-log)
-- JavaScript — [contact-app](https://github.com/thoriqafa/contact-app), [contact-app-web](https://github.com/thoriqafa/contact-app-web), [notes-app](https://github.com/thoriqafa/notes-app), [Pokemon-API](https://github.com/thoriqafa/Pokemon-API)
-- TypeScript — [hydrogen-template](https://github.com/thoriqafa/hydrogen-template)
-- Pascal — [SPK](https://github.com/thoriqafa/SPK), [CRUD-with-UNIGUI-Delphi-7-MySQL](https://github.com/thoriqafa/CRUD-with-UNIGUI-Delphi-7-MySQL), [Simple-CRUD-Delphi-7-With-MySQL](https://github.com/thoriqafa/Simple-CRUD-Delphi-7-With-MySQL)
-- C++ — [multi-platform-app](https://github.com/thoriqafa/multi-platform-app)
-- HTML — [Leave_Request_App_V2](https://github.com/thoriqafa/Leave_Request_App_V2), [thoriqafa.github.io](https://github.com/thoriqafa/thoriqafa.github.io)
-- Jupyter Notebook — [Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)
-- MATLAB — [Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)
-- Java — [BasicOOPJava](https://github.com/thoriqafa/BasicOOPJava), [Smart-P
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Delphi-EE1F35?style=flat-square&logo=delphi&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+</p>
+
+### Frameworks & Tools
+
+<p>
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/CodeIgniter-EF4223?style=flat-square&logo=codeigniter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+</p>
+
+### AI & Data
+
+<p>
+  <img src="https://img.shields.io/badge/Artificial_Intelligence-412991?style=flat-square&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" />
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white" />
+</p>
 <!-- AUTO:TECHSTACK:END -->
 
 ---
@@ -71,18 +73,17 @@ Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused
 ## 🚀 Featured Projects
 
 <!-- AUTO:PROJECTS:START -->
-## Featured Projects
+| Project | Description | Technology |
+|---------|-------------|------------|
+| **[SPK](https://github.com/thoriqafa/SPK)** | Automated SPK document upload from SAP to Digital Approve | Pascal / Delphi |
+| **[dev-note](https://github.com/thoriqafa/dev-note)** | Developer knowledge base and personal development notes | PHP |
+| **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** | Minimal web application starter template | TypeScript |
+| **[spk-nodoc-log](https://github.com/thoriqafa/spk-nodoc-log)** | SPK document processing and logging utility | PHP |
+| **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** | Passenger survival classification using machine learning | Jupyter Notebook |
+| **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** | Fundamental artificial neural network implementation | MATLAB |
+| **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** | Smart parking management system | Java / SQL Server |
 
-| Project | Description | Tech | Link |
-|---------|-------------|------|------|
-| **SPK** | Automated SPK document upload from SAP to Digital Approve | Pascal | [Repo](https://github.com/thoriqafa/SPK) |
-| **dev-note** | Developer knowledge base and notes management application | PHP | [Repo](https://github.com/thoriqafa/dev-note) |
-| **hydrogen-template** | Web application project template built with the Hydrogen framework | TypeScript | [Repo](https://github.com/thoriqafa/hydrogen-template) |
-| **spk-nodoc-log** | SPK logging utility for document processing without documentation | PHP | [Repo](https://github.com/thoriqafa/spk-nodoc-log) |
-| **Data-Mining-Mini-Project** | Passenger survival classification using ML algorithms on Kaggle dataset | Jupyter Notebook | [Repo](https://github.com/thoriqafa/Data-Mining-Mini-Project) |
-| **Basic-Artificial-Neural-Network** | Fundamental implementation of artificial neural network algorithms in MATLAB | MATLAB | [Repo](https://github.com/thoriqafa/Basic-Artificial-Neural-Network) |
-
-*More projects available on [my GitHub profile](https://github.com/thoriqafa?tab=repositories).*
+[View all repositories →](https://github.com/thoriqafa?tab=repositories)
 <!-- AUTO:PROJECTS:END -->
 
 ---
@@ -90,27 +91,51 @@ Backend Developer · AI Enthusiast based in Indonesia. Backend developer focused
 ## 📊 GitHub Statistics
 
 <!-- AUTO:STATS:START -->
-<img src="assets/github-stats.svg" alt="GitHub Statistics" width="495"/>
+<p align="center">
+  <img src="assets/github-stats.svg" alt="GitHub Statistics" width="495"/>
+</p>
 <!-- AUTO:STATS:END -->
-
----
 
 ## 🔥 Contribution Streak
 
 <!-- AUTO:STREAK:START -->
-<img src="https://streak-stats.demolab.com/?user=thoriqafa&theme=tokyonight" alt="Contribution Streak" width="495"/>
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com/?user=thoriqafa&theme=tokyonight"
+    alt="GitHub Contribution Streak"
+    width="495"
+  />
+</p>
 <!-- AUTO:STREAK:END -->
-
----
 
 ## 📈 Contribution Activity
 
 <!-- AUTO:ACTIVITY:START -->
-<img src="assets/github-activity.svg" alt="Contribution Activity" width="495"/>
+<p align="center">
+  <img src="assets/github-activity.svg" alt="GitHub Contribution Activity" width="495"/>
+</p>
 <!-- AUTO:ACTIVITY:END -->
+
+---
+
+## 🎯 Currently Exploring
+
+* Distributed systems & message queues
+* LLM integration for backend services
+* AI-powered application workflows
+* Observability & developer tooling
+* Infrastructure & containerization
+* Open-source development
 
 ---
 
 ## 📫 Contact
 
-Email: thoriqafa5@gmail.com
+* 📧 **Email:** [thoriqafa5@gmail.com](mailto:thoriqafa5@gmail.com)
+* 💻 **GitHub:** [github.com/thoriqafa](https://github.com/thoriqafa)
+
+---
+
+<p align="center">
+  <i>Building useful things, automating repetitive work, and continuously learning.</i>
+</p>

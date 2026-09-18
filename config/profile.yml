@@ -1,10 +1,15 @@
 profile:
   name: "Thoriq Afa"
-  headline: "Backend Developer · AI Enthusiast"
+  display_name: "Thoriq"
+  headline: "Application Developer · Backend · AI Enthusiast"
+  tagline: >-
+    I build **web applications, information systems, automation tools, and
+    backend services** with a focus on practical solutions and reliable systems.
   bio: >
     Backend developer yang berfokus pada pengembangan aplikasi,
     automation, system integration, dan eksplorasi teknologi AI.
   location: "Indonesia"
+  email: "thoriqafa5@gmail.com"
   website: ""
   social:
     github: "https://github.com/thoriqafa"
@@ -21,6 +26,44 @@ profile:
     - Practical AI implementation
     - Reliable backend systems
 
+# ============================================================
+# TECH STACK BADGES
+# ============================================================
+# Badge di bawah ini di-render oleh scripts/badges.py, BUKAN oleh AI.
+# Isi `badges` dengan id dari BADGE_CATALOG di scripts/badges.py.
+# Urutan di sini menentukan urutan badge pada README.
+tech_stack:
+  # Tambahkan badge dari bahasa repo yang belum ada di daftar di bawah,
+  # ke grup `auto_append_group`. Set false kalau mau daftar fully manual.
+  auto_append_languages: true
+  auto_append_group: "Languages"
+  groups:
+    - name: "Languages"
+      badges:
+        - python
+        - php
+        - delphi
+        - typescript
+        - javascript
+        - java
+        - cplusplus
+        - sql
+    - name: "Frameworks & Tools"
+      badges:
+        - laravel
+        - codeigniter
+        - nodejs
+        - fastapi
+        - docker
+        - linux
+        - git
+        - mysql
+    - name: "AI & Data"
+      badges:
+        - ai
+        - jupyter
+        - matlab
+
 readme:
   language: "English"
   sections:
@@ -28,11 +71,12 @@ readme:
     - about
     - tech_stack
     - featured_projects
-    - github_activity
-    - contribution_graph
-    - current_focus
+    - github_statistics
+    - contribution_streak
+    - contribution_activity
+    - currently_exploring
     - contact
-  max_featured_projects: 6
+  max_featured_projects: 7
   allow_ai_to:
     - improve_wording
     - summarize_projects
@@ -46,3 +90,4 @@ readme:
     - inventing_certifications
     - inventing_skills
     - inventing_achievements
+    - inventing_badges
