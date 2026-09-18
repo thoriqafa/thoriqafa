@@ -6,7 +6,8 @@ import yaml
 from openai import OpenAI
 
 from badges import build_badge_groups, render_badge_groups, validate_badge_content
-from github_data import GITHUB_USERNAME, get_profile, get_repositories
+from generate_charts import ACTIVITY_WIDTH, STATS_WIDTH, STREAK_WIDTH
+from github_data import get_profile, get_repositories
 from prompts import SYSTEM_PROMPT, build_prompt
 
 
@@ -161,7 +162,10 @@ def clean_markdown(content):
     return content
 
 
-def centered_image(src, alt, width=495):
+# Path ditulis manual (bukan os.path.join) supaya README selalu memakai
+# forward slash. Lebarnya diambil dari generate_charts.py supaya SVG dirender
+# pada skala 1:1.
+def centered_image(src, alt, width):
     return (
         '<p align="center">\n'
         f'  <img src="{src}" alt="{alt}" width="{width}"/>\n'
@@ -170,19 +174,18 @@ def centered_image(src, alt, width=495):
 
 
 def generate_stats_section():
-    return centered_image("assets/github-stats.svg", "GitHub Statistics")
+    return centered_image(
+        "assets/github-stats.svg",
+        "GitHub Statistics",
+        STATS_WIDTH,
+    )
 
 
 def generate_streak_section():
-    return (
-        '<p align="center">\n'
-        '  <img\n'
-        f'    src="https://streak-stats.demolab.com/?user={GITHUB_USERNAME}'
-        '&theme=tokyonight"\n'
-        '    alt="GitHub Contribution Streak"\n'
-        '    width="495"\n'
-        '  />\n'
-        '</p>'
+    return centered_image(
+        "assets/github-streak.svg",
+        "GitHub Contribution Streak",
+        STREAK_WIDTH,
     )
 
 
@@ -190,6 +193,7 @@ def generate_activity_section():
     return centered_image(
         "assets/github-activity.svg",
         "GitHub Contribution Activity",
+        ACTIVITY_WIDTH,
     )
 
 

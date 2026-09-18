@@ -100,11 +100,7 @@ I'm a developer from Indonesia focused on:
 
 <!-- AUTO:STREAK:START -->
 <p align="center">
-  <img
-    src="https://streak-stats.demolab.com/?user=thoriqafa&theme=tokyonight"
-    alt="GitHub Contribution Streak"
-    width="495"
-  />
+  <img src="assets/github-streak.svg" alt="GitHub Contribution Streak" width="495"/>
 </p>
 <!-- AUTO:STREAK:END -->
 
@@ -112,7 +108,7 @@ I'm a developer from Indonesia focused on:
 
 <!-- AUTO:ACTIVITY:START -->
 <p align="center">
-  <img src="assets/github-activity.svg" alt="GitHub Contribution Activity" width="495"/>
+  <img src="assets/github-activity.svg" alt="GitHub Contribution Activity" width="687"/>
 </p>
 <!-- AUTO:ACTIVITY:END -->
 
