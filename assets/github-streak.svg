@@ -1,37 +1,99 @@
-<svg width="495" height="140" viewBox="0 0 495 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub Contribution Streak for thoriqafa">
+<svg width="495" height="152" viewBox="0 0 495 152" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution streak for thoriqafa">
   <defs>
-    <linearGradient id="streakBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#161b22;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    <linearGradient id="card-495x152" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" class="card-grad-a" />
+      <stop offset="100%" class="card-grad-b" />
     </linearGradient>
-    <linearGradient id="fireGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#ffd700;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fff;stop-opacity:1" />
-    </linearGradient>
-    <filter id="fireGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
-  <rect width="495" height="140" rx="12" fill="url(#streakBg)" stroke="#30363d" stroke-width="1"/>
-  <rect x="0" y="0" width="495" height="48" rx="12" fill="#0d1117" stroke="none"/>
-  <text x="24" y="32" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#e6edf3">🔥 Contribution Streak</text>
+  <style>
+      :root {
+        --surface-a: #ffffff;
+        --surface-b: #f6f8fa;
+        --border: #d0d7de;
+        --header: #f6f8fa;
+        --text: #1f2328;
+        --muted: #59636e;
+        --faint: #818b98;
+        --level-0: #ebedf0;
+        --level-1: #9be9a8;
+        --level-2: #40c463;
+        --level-3: #30a14e;
+        --level-4: #216e39;
+        --c-star: #bf8700;
+        --c-fork: #0969da;
+        --c-follow: #8250df;
+        --c-repo: #1b7c83;
+        --c-contrib: #1a7f37;
+        --c-commit: #bc4c00;
+        --c-pr: #bf3989;
+        --c-issue: #cf222e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+        --surface-a: #0d1117;
+        --surface-b: #161b22;
+        --border: #30363d;
+        --header: #161b22;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --faint: #6e7681;
+        --level-0: #21262d;
+        --level-1: #0e4429;
+        --level-2: #006d32;
+        --level-3: #26a641;
+        --level-4: #39d353;
+        --c-star: #d29922;
+        --c-fork: #58a6ff;
+        --c-follow: #a371f7;
+        --c-repo: #39c5cf;
+        --c-contrib: #3fb950;
+        --c-commit: #f0883e;
+        --c-pr: #db61a2;
+        --c-issue: #f85149;
+        }
+      }
 
-  <g transform="translate(24, 65)">
-    <text x="0" y="24" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">Current Streak</text>
-    <text x="0" y="54" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="url(#fireGradient)" filter="url(#fireGlow)">90</text>
-    <text x="0" y="76" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#6e7681">days</text>
-  </g>
-
-  <g transform="translate(257, 65)">
-    <text x="0" y="24" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">Longest Streak</text>
-    <text x="0" y="54" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#58a6ff">5</text>
-    <text x="0" y="76" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#6e7681">days</text>
-  </g>
-
-  <text x="483" y="130" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#6e7681" text-anchor="end">Updated 2026-09-18 05:30 UTC</text>
+      .card-frame { stroke: var(--border); stroke-width: 1; }
+      .card-grad-a { stop-color: var(--surface-a); }
+      .card-grad-b { stop-color: var(--surface-b); }
+      .header-fill { fill: var(--header); }
+      .divider { stroke: var(--border); stroke-width: 1; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; fill: var(--text); }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 11px; fill: var(--muted); }
+      .label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; fill: var(--muted); }
+      .value { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 700; }
+      .metric { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 700; }
+      .unit { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 12px; fill: var(--muted); }
+      .axis { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 9px; fill: var(--muted); }
+      .meta { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 9px; fill: var(--faint); }
+      .c-star { fill: var(--c-star); }
+      .c-fork { fill: var(--c-fork); }
+      .c-follow { fill: var(--c-follow); }
+      .c-muted { fill: var(--muted); }
+      .c-repo { fill: var(--c-repo); }
+      .c-contrib { fill: var(--c-contrib); }
+      .c-commit { fill: var(--c-commit); }
+      .c-pr { fill: var(--c-pr); }
+      .c-issue { fill: var(--c-issue); }
+      .level-0 { fill: var(--level-0); }
+      .level-1 { fill: var(--level-1); }
+      .level-2 { fill: var(--level-2); }
+      .level-3 { fill: var(--level-3); }
+      .level-4 { fill: var(--level-4); }
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="151" rx="12" fill="url(#card-495x152)" class="card-frame" />
+  <rect x="1" y="1" width="493" height="45" rx="11" class="header-fill" />
+  <rect x="1" y="23" width="493" height="23" class="header-fill" />
+  <line x1="1" y1="46" x2="494" y2="46" class="divider" />
+  <text x="24" y="30" class="title">Contribution Streak</text>
+  <text x="471" y="29" class="subtitle" text-anchor="end">Last 365 days</text>
+  <text x="24" y="74" class="label">CURRENT STREAK</text>
+  <text x="24" y="126" class="metric c-contrib"><tspan>90</tspan><tspan class="unit" dx="6">days</tspan></text>
+  <line x1="161" y1="62" x2="161" y2="136" class="divider" />
+  <text x="173" y="74" class="label">LONGEST STREAK</text>
+  <text x="173" y="126" class="metric c-fork"><tspan>5</tspan><tspan class="unit" dx="6">days</tspan></text>
+  <line x1="310" y1="62" x2="310" y2="136" class="divider" />
+  <text x="322" y="74" class="label">TOTAL CONTRIBUTIONS</text>
+  <text x="322" y="126" class="metric c-follow"><tspan>263</tspan></text>
+  <text x="471" y="140" class="meta" text-anchor="end">Updated 2026-09-18 07:04 UTC</text>
 </svg>
