@@ -74,13 +74,13 @@ I am an application developer based in Indonesia, focused on building practical 
 <!-- AUTO:PROJECTS:START -->
 | Project | Description | Technology |
 |---------|-------------|------------|
-| **[SPK](https://github.com/thoriqafa/SPK)** | Automated SPK document upload from SAP to Digital Approve | Pascal / Delphi |
+| **[SPK](https://github.com/thoriqafa/SPK)** | Automated SPK document upload from SAP to Digital Approve | Pascal |
 | **[dev-note](https://github.com/thoriqafa/dev-note)** | Developer knowledge base and personal development notes | PHP |
 | **[hydrogen-template](https://github.com/thoriqafa/hydrogen-template)** | Minimal web application starter template | TypeScript |
 | **[spk-nodoc-log](https://github.com/thoriqafa/spk-nodoc-log)** | SPK document processing and logging utility | PHP |
 | **[Data-Mining-Mini-Project](https://github.com/thoriqafa/Data-Mining-Mini-Project)** | Passenger survival classification using machine learning | Jupyter Notebook |
 | **[Basic-Artificial-Neural-Network](https://github.com/thoriqafa/Basic-Artificial-Neural-Network)** | Fundamental artificial neural network implementation | MATLAB |
-| **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** | Smart parking management system | Java / SQL Server |
+| **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** | Smart parking management system | Java |
 
 [View all repositories →](https://github.com/thoriqafa?tab=repositories)
 <!-- AUTO:PROJECTS:END -->
