@@ -9,7 +9,7 @@ I build **web applications, information systems, automation tools, and backend s
 ## 👨‍💻 About Me
 
 <!-- AUTO:ABOUT:START -->
-Application developer based in Indonesia. Build web applications, information systems, process automation tools, backend services.
+Application developer based in Indonesia. I build web applications, information systems, automation tools, and backend services with a focus on practical solutions and reliable systems.
 
 * 🔧 Backend Development
 * 🌐 API Development
@@ -20,7 +20,7 @@ Application developer based in Indonesia. Build web applications, information sy
 
 ### Development Principles
 
-* Clean maintainable code
+* Clean and maintainable code
 * Automation over repetitive work
 * Practical AI implementation
 * Reliable backend systems
