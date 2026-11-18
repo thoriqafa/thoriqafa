@@ -82,7 +82,7 @@ def generate_section(
 ):
     model = os.environ.get(
         "AI_MODEL",
-        "myminebos"
+        "github-profile"
     )
 
     prompt = build_prompt(
