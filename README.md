@@ -13,8 +13,8 @@ Application developer based in Indonesia. I build web applications, information 
 
 * 🔧 Backend Development
 * 🌐 API Development
-* 🗄️ Database Management
-* ⚙️ Process Automation
+* 🗄️ Database
+* ⚙️ Automation
 * 🤖 Artificial Intelligence
 * 🔄 System Integration
 
@@ -83,6 +83,8 @@ Application developer based in Indonesia. I build web applications, information 
 | **[Smart-Parkir](https://github.com/thoriqafa/Smart-Parkir)** | Smart parking management system | Java |
 
 [View all repositories →](https://github.com/thoriqafa?tab=repositories)
+
+skipped: non-table layout, add when user explicitly requests alternative formatting.
 <!-- AUTO:PROJECTS:END -->
 
 ---
